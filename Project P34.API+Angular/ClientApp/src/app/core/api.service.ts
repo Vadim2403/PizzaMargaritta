@@ -4,6 +4,7 @@ import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
 import { ApiResult } from '../Models/result.model';
+import { Pizza } from '../Models/pizza.model';
 
 @Injectable({
   providedIn: 'root'
@@ -19,6 +20,10 @@ export class ApiService {
 
   SignIn(UserLoginDto: SignInModel) {
     return this.http.post<ApiResult>(this.baseUrl + '/login', UserLoginDto);
+  }
+
+  GetPizzas() {
+    return this.http.get<Pizza[]>('/api/pizzas');
   }
 
   isAdmin() {
