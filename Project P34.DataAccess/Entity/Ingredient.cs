@@ -20,6 +20,9 @@ namespace Project_P34.DataAccess.Entity
         [ForeignKey("pizza")]
         public string  pizza_ID { get; set; }
 
+        [Required]
+        public string Image { get; set; }
+
         public Pizza pizza { get; set; }
 
     }

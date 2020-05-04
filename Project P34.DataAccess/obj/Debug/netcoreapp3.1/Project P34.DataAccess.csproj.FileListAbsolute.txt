@@ -31,3 +31,4 @@ C:\Users\Morgan\Desktop\Програмiння\Course\PizzaMargaritta\Project P34
 C:\Users\Morgan\Desktop\Програмiння\Course\PizzaMargaritta\Project P34.DataAccess\obj\Debug\netcoreapp3.1\Project P34.DataAccess.dll
 C:\Users\Morgan\Desktop\Програмiння\Course\PizzaMargaritta\Project P34.DataAccess\obj\Debug\netcoreapp3.1\Project P34.DataAccess.pdb
 C:\Users\Morgan\Desktop\Програмiння\Course\PizzaMargaritta\Project P34.DataAccess\obj\Debug\netcoreapp3.1\Project P34.DataAccess.genruntimeconfig.cache
+C:\Users\Morgan\Desktop\Програмiння\Course\PizzaMargaritta\Project P34.DataAccess\obj\Debug\netcoreapp3.1\Project P34.DataAccess.csprojAssemblyReference.cache
