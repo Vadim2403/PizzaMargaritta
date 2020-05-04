@@ -12,6 +12,8 @@ namespace Project_P34.DataAccess
         public EFContext(DbContextOptions<EFContext> options): base(options) { }
 
         public DbSet<UserMoreInfo> userMoreInfos { get; set; }
+        public DbSet<Pizza> pizzas { get; set; }
+        public DbSet<Ingredient> Ingredients { get; set; }
 
         protected override void OnModelCreating(ModelBuilder builder)
         {
