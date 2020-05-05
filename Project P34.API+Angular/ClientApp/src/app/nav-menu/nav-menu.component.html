@@ -19,7 +19,7 @@
 
 
           <li *ngIf="isLoggedIn === true" class="nav-item">
-            <a class="nav-link text-dark">Whishlist</a>
+            <a class="nav-link text-dark" [routerLink]="['whishlist']">Whishlist</a>
           </li>
           <li  *ngIf="isLoggedIn === true" class="nav-item logout">
             <a (click)="Logout()" class="nav-link text-dark">Logout</a>

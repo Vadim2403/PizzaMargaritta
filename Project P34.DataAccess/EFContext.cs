@@ -14,6 +14,7 @@ namespace Project_P34.DataAccess
         public DbSet<UserMoreInfo> userMoreInfos { get; set; }
         public DbSet<Pizza> pizzas { get; set; }
         public DbSet<Ingredient> Ingredients { get; set; }
+        public DbSet<Orderpizza> Orderpizzas { get; set; }
 
         protected override void OnModelCreating(ModelBuilder builder)
         {

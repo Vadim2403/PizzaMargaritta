@@ -7,7 +7,7 @@ using System.Text;
 namespace Project_P34.DataAccess.Entity
 {
     [Table("tblOrder")]
-    class Orderpizza
+    public class Orderpizza
     {
         [Key]
         public string Id { get; set; }

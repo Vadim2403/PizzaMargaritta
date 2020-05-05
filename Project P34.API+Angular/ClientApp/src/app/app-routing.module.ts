@@ -14,11 +14,13 @@ import { HomeComponent } from './home/home.component';
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { AdminAreaComponent } from './Areas/admin-area/admin-area.component';
+import { WhislistComponentComponent } from './WhislistComponent/WhislistComponent.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent, pathMatch: 'full'},
   { path: 'login', component: LoginComponent, pathMatch: 'full', canActivate: [NotLoginGuard] },
   { path: 'register', component: RegisterComponent, pathMatch: 'full', canActivate: [NotLoginGuard]  },
+  { path: 'whishlist', component: WhislistComponentComponent, pathMatch: 'full'},
 
 
   {
