@@ -18,6 +18,8 @@ import { NgxSpinnerModule } from 'ngx-spinner';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AdminAreaComponent } from './Areas/admin-area/admin-area.component';
 import { UserAreaComponent } from './Areas/user-area/user-area.component';
+import { PizzaListComponent } from './Pizza/pizza-list/pizza-list.component';
+import { PizzaItemComponent } from './Pizza/pizza-list/pizza-item/pizza-item.component';
 
 const notifierOptions: NotifierOptions = {
   position: {horizontal: { position: 'right' }, vertical: { position: 'top' }}
@@ -35,7 +37,9 @@ const notifierOptions: NotifierOptions = {
       AdminAreaComponent,
       UserAreaComponent,
       DashboardComponent,
-      UserManagerComponent
+      UserManagerComponent,
+      PizzaListComponent,
+      PizzaItemComponent
    ],
    imports: [
       BrowserModule.withServerTransition({appId: 'ng-cli-universal'}),
