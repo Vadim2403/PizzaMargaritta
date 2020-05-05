@@ -7,6 +7,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using Project_IDA.DTO.Models.Result;
 using Project_P34.DataAccess;
+using Project_P34.DataAccess.Entity;
 using Project_P34.DataAccess.Entity.Models;
 using Project_P34.Domain.Interfaces;
 
@@ -47,6 +48,19 @@ namespace Project_P34.API_Angular.Controllers
             return result;
         }
 
+        [HttpPost]
+        public ResultDto AddPizza([FromBody]PizzaViewModel model)
+        {
+            _context.pizzas.Add(new Pizza()
+            {
+                Id = Guid.NewGuid().ToString(),
+                Description = model.Description,
+                Image = model.Image,
+                Name = model.Name,
+                Price = model.Price
+            });
+            return new ResultDto() { Message = "Added",Status=200};
+        }
 
     }
 }
