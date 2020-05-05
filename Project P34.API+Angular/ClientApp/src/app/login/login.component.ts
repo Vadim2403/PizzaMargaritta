@@ -52,10 +52,10 @@ export class LoginComponent implements OnInit {
       this.apiService.SignIn(this.model).subscribe(
         data => {
           if (data.status === 200) {
-
+            
             console.log(data);
             window.localStorage.setItem('token', data.token);
-
+            this.apiService.loginStatus.emit(true);
           const jwtData = data.token.split('.')[1];
           const decodedJwtJsonData = window.atob(jwtData);
           const decodedJwtData = JSON.parse(decodedJwtJsonData);
