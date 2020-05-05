@@ -13,6 +13,7 @@ export class PizzaItemComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
+
   }
 
 }
