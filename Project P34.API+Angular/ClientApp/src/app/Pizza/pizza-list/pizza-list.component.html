@@ -1,8 +1,8 @@
-<p>pizza-list works!</p>
 
-
+<div class="container">
 <div class="row">
   <div class="col">
-      <app-pizza-item *ngFor="let item of pizzas;let i = index"></app-pizza-item>
+      <app-pizza-item *ngFor="let item of pizzas;let i = index" [pizza] = "item"></app-pizza-item>
   </div>
+</div>
 </div>
