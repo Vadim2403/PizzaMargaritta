@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "CEWJtchaiyrULKQkaAkYm7tcyKN03on3U0RgzYp/Gx0HEKSWVlk7meI4+4G188sf1l3e4bl/XLZaV5/b1hpDgA==",
+  "dgSpecHash": "W35rn+xWl7TebBqTKVOLMtBMDgs/GnoJwA/xOKQ1AyfKLrVeCkJFWe8w7QTwwf1huT62SLNLXJOjRrNxXWwcrw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Morgan\\Desktop\\Програмiння\\Course\\PizzaMargaritta\\Project P34.DataAccess\\Project P34.DataAccess.csproj",
+  "projectFilePath": "C:\\Users\\Morgan\\Source\\Repos\\PizzaMargarittaCourse\\Project P34.DataAccess\\Project P34.DataAccess.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Morgan\\.nuget\\packages\\microsoft.aspnetcore.cryptography.internal\\3.1.1\\microsoft.aspnetcore.cryptography.internal.3.1.1.nupkg.sha512",
     "C:\\Users\\Morgan\\.nuget\\packages\\microsoft.aspnetcore.cryptography.keyderivation\\3.1.1\\microsoft.aspnetcore.cryptography.keyderivation.3.1.1.nupkg.sha512",

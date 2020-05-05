@@ -44,7 +44,7 @@ namespace Project_P34.API_Angular
             services.AddTransient<IJWTTokenService, JWTTokenService>();
 
             var signingKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(Configuration.GetValue<string>("SecretPhrase")));
-
+            //ss
 
             services.Configure<IdentityOptions>(options =>
             {

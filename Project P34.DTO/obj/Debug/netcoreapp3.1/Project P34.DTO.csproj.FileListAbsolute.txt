@@ -44,3 +44,15 @@ C:\Users\Администратор\Source\Repos\PizzaMargaritta\Project P34.DTO
 C:\Users\Администратор\Source\Repos\PizzaMargaritta\Project P34.DTO\obj\Debug\netcoreapp3.1\Project P34.DTO.csproj.CopyComplete
 C:\Users\Администратор\Source\Repos\PizzaMargaritta\Project P34.DTO\obj\Debug\netcoreapp3.1\Project P34.DTO.dll
 C:\Users\Администратор\Source\Repos\PizzaMargaritta\Project P34.DTO\obj\Debug\netcoreapp3.1\Project P34.DTO.pdb
+C:\Users\Morgan\Source\Repos\PizzaMargarittaCourse\Project P34.DTO\bin\Debug\netcoreapp3.1\Project P34.DTO.deps.json
+C:\Users\Morgan\Source\Repos\PizzaMargarittaCourse\Project P34.DTO\bin\Debug\netcoreapp3.1\Project P34.DTO.dll
+C:\Users\Morgan\Source\Repos\PizzaMargarittaCourse\Project P34.DTO\bin\Debug\netcoreapp3.1\Project P34.DTO.pdb
+C:\Users\Morgan\Source\Repos\PizzaMargarittaCourse\Project P34.DTO\bin\Debug\netcoreapp3.1\Project P34.DataAccess.dll
+C:\Users\Morgan\Source\Repos\PizzaMargarittaCourse\Project P34.DTO\bin\Debug\netcoreapp3.1\Project P34.DataAccess.pdb
+C:\Users\Morgan\Source\Repos\PizzaMargarittaCourse\Project P34.DTO\obj\Debug\netcoreapp3.1\Project P34.DTO.csprojAssemblyReference.cache
+C:\Users\Morgan\Source\Repos\PizzaMargarittaCourse\Project P34.DTO\obj\Debug\netcoreapp3.1\Project P34.DTO.csproj.CoreCompileInputs.cache
+C:\Users\Morgan\Source\Repos\PizzaMargarittaCourse\Project P34.DTO\obj\Debug\netcoreapp3.1\Project P34.DTO.AssemblyInfoInputs.cache
+C:\Users\Morgan\Source\Repos\PizzaMargarittaCourse\Project P34.DTO\obj\Debug\netcoreapp3.1\Project P34.DTO.AssemblyInfo.cs
+C:\Users\Morgan\Source\Repos\PizzaMargarittaCourse\Project P34.DTO\obj\Debug\netcoreapp3.1\Project P34.DTO.csproj.CopyComplete
+C:\Users\Morgan\Source\Repos\PizzaMargarittaCourse\Project P34.DTO\obj\Debug\netcoreapp3.1\Project P34.DTO.dll
+C:\Users\Morgan\Source\Repos\PizzaMargarittaCourse\Project P34.DTO\obj\Debug\netcoreapp3.1\Project P34.DTO.pdb

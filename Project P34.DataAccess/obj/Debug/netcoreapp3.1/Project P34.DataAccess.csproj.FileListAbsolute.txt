@@ -42,3 +42,14 @@ C:\Users\Администратор\Source\Repos\PizzaMargaritta\Project P34.Dat
 C:\Users\Администратор\Source\Repos\PizzaMargaritta\Project P34.DataAccess\obj\Debug\netcoreapp3.1\Project P34.DataAccess.dll
 C:\Users\Администратор\Source\Repos\PizzaMargaritta\Project P34.DataAccess\obj\Debug\netcoreapp3.1\Project P34.DataAccess.pdb
 C:\Users\Администратор\Source\Repos\PizzaMargaritta\Project P34.DataAccess\obj\Debug\netcoreapp3.1\Project P34.DataAccess.genruntimeconfig.cache
+C:\Users\Morgan\Source\Repos\PizzaMargarittaCourse\Project P34.DataAccess\bin\Debug\netcoreapp3.1\Project P34.DataAccess.deps.json
+C:\Users\Morgan\Source\Repos\PizzaMargarittaCourse\Project P34.DataAccess\bin\Debug\netcoreapp3.1\Project P34.DataAccess.runtimeconfig.json
+C:\Users\Morgan\Source\Repos\PizzaMargarittaCourse\Project P34.DataAccess\bin\Debug\netcoreapp3.1\Project P34.DataAccess.runtimeconfig.dev.json
+C:\Users\Morgan\Source\Repos\PizzaMargarittaCourse\Project P34.DataAccess\bin\Debug\netcoreapp3.1\Project P34.DataAccess.dll
+C:\Users\Morgan\Source\Repos\PizzaMargarittaCourse\Project P34.DataAccess\bin\Debug\netcoreapp3.1\Project P34.DataAccess.pdb
+C:\Users\Morgan\Source\Repos\PizzaMargarittaCourse\Project P34.DataAccess\obj\Debug\netcoreapp3.1\Project P34.DataAccess.csproj.CoreCompileInputs.cache
+C:\Users\Morgan\Source\Repos\PizzaMargarittaCourse\Project P34.DataAccess\obj\Debug\netcoreapp3.1\Project P34.DataAccess.AssemblyInfoInputs.cache
+C:\Users\Morgan\Source\Repos\PizzaMargarittaCourse\Project P34.DataAccess\obj\Debug\netcoreapp3.1\Project P34.DataAccess.AssemblyInfo.cs
+C:\Users\Morgan\Source\Repos\PizzaMargarittaCourse\Project P34.DataAccess\obj\Debug\netcoreapp3.1\Project P34.DataAccess.dll
+C:\Users\Morgan\Source\Repos\PizzaMargarittaCourse\Project P34.DataAccess\obj\Debug\netcoreapp3.1\Project P34.DataAccess.pdb
+C:\Users\Morgan\Source\Repos\PizzaMargarittaCourse\Project P34.DataAccess\obj\Debug\netcoreapp3.1\Project P34.DataAccess.genruntimeconfig.cache
