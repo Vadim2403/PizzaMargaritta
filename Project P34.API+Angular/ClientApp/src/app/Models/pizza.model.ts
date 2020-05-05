@@ -1,14 +1,14 @@
 export class Pizza {
 
-  public Name: string;
-  public Description: string;
-  public Price: number;
-  public Image: string;
+  public name: string;
+  public description: string;
+  public price: number;
+  public image: string;
 
   constructor(){
-    this.Name = null;
-    this.Description = null;
-    this.Price = null;
-    this.Image = null;
+    this.name = null;
+    this.description = null;
+    this.price = null;
+    this.image = null;
   }
 }
