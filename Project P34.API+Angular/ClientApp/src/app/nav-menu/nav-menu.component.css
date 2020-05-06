@@ -24,3 +24,7 @@ html {
 .logout{
   cursor:pointer;
 }
+
+.logout:hover{
+  font-weight: lighter;
+}
