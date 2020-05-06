@@ -15,6 +15,7 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { AdminAreaComponent } from './Areas/admin-area/admin-area.component';
 import { WhislistComponentComponent } from './WhislistComponent/WhislistComponent.component';
+import { PizzaManagerComponent } from './Areas/admin-area/Components/pizza-manager/pizza-manager.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent, pathMatch: 'full'},
@@ -29,7 +30,8 @@ const routes: Routes = [
     canActivate: [AdminGuard],
     children: [
       { path: '', component: DashboardComponent, pathMatch: 'full' },
-      { path: 'user-manager', component: UserManagerComponent, pathMatch: 'full' }
+      { path: 'user-manager', component: UserManagerComponent, pathMatch: 'full' },
+      { path: 'pizza-manager', component: PizzaManagerComponent, pathMatch: 'full'}
     ]
   },
 

@@ -53,3 +53,14 @@ C:\Users\Morgan\Source\Repos\PizzaMargarittaCourse\Project P34.DataAccess\obj\De
 C:\Users\Morgan\Source\Repos\PizzaMargarittaCourse\Project P34.DataAccess\obj\Debug\netcoreapp3.1\Project P34.DataAccess.dll
 C:\Users\Morgan\Source\Repos\PizzaMargarittaCourse\Project P34.DataAccess\obj\Debug\netcoreapp3.1\Project P34.DataAccess.pdb
 C:\Users\Morgan\Source\Repos\PizzaMargarittaCourse\Project P34.DataAccess\obj\Debug\netcoreapp3.1\Project P34.DataAccess.genruntimeconfig.cache
+C:\Users\Администратор\Source\Repos\PizzaMargarittaClone\Project P34.DataAccess\bin\Debug\netcoreapp3.1\Project P34.DataAccess.deps.json
+C:\Users\Администратор\Source\Repos\PizzaMargarittaClone\Project P34.DataAccess\bin\Debug\netcoreapp3.1\Project P34.DataAccess.runtimeconfig.json
+C:\Users\Администратор\Source\Repos\PizzaMargarittaClone\Project P34.DataAccess\bin\Debug\netcoreapp3.1\Project P34.DataAccess.runtimeconfig.dev.json
+C:\Users\Администратор\Source\Repos\PizzaMargarittaClone\Project P34.DataAccess\bin\Debug\netcoreapp3.1\Project P34.DataAccess.dll
+C:\Users\Администратор\Source\Repos\PizzaMargarittaClone\Project P34.DataAccess\bin\Debug\netcoreapp3.1\Project P34.DataAccess.pdb
+C:\Users\Администратор\Source\Repos\PizzaMargarittaClone\Project P34.DataAccess\obj\Debug\netcoreapp3.1\Project P34.DataAccess.csprojAssemblyReference.cache
+C:\Users\Администратор\Source\Repos\PizzaMargarittaClone\Project P34.DataAccess\obj\Debug\netcoreapp3.1\Project P34.DataAccess.AssemblyInfoInputs.cache
+C:\Users\Администратор\Source\Repos\PizzaMargarittaClone\Project P34.DataAccess\obj\Debug\netcoreapp3.1\Project P34.DataAccess.AssemblyInfo.cs
+C:\Users\Администратор\Source\Repos\PizzaMargarittaClone\Project P34.DataAccess\obj\Debug\netcoreapp3.1\Project P34.DataAccess.dll
+C:\Users\Администратор\Source\Repos\PizzaMargarittaClone\Project P34.DataAccess\obj\Debug\netcoreapp3.1\Project P34.DataAccess.pdb
+C:\Users\Администратор\Source\Repos\PizzaMargarittaClone\Project P34.DataAccess\obj\Debug\netcoreapp3.1\Project P34.DataAccess.genruntimeconfig.cache

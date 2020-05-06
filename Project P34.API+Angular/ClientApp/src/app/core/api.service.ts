@@ -6,6 +6,7 @@ import { Observable } from 'rxjs';
 import { ApiResult } from '../Models/result.model';
 import { Pizza } from '../Models/pizza.model';
 import { EventEmitter } from '@angular/core';
+import { PizzaCreate } from '../Models/pizza-create';
 
 @Injectable({
   providedIn: 'root'
@@ -25,6 +26,9 @@ export class ApiService {
 
   GetPizzas() {
     return this.http.get<Pizza[]>('/api/pizzas');
+  }
+  AddPizza(PizzaModel: PizzaCreate){
+    return this.http.post<ApiResult>('/api/pizzas/addpizza', PizzaModel);
   }
 
   isAdmin() {
@@ -55,7 +59,7 @@ export class ApiService {
       return false;
     }
   }
- 
+
   Logout() {
       localStorage.removeItem('token');
       this.loginStatus.emit(false);

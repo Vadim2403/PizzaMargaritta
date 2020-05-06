@@ -21,6 +21,8 @@ import { UserAreaComponent } from './Areas/user-area/user-area.component';
 import { PizzaListComponent } from './Pizza/pizza-list/pizza-list.component';
 import { PizzaItemComponent } from './Pizza/pizza-list/pizza-item/pizza-item.component';
 import { WhislistComponentComponent } from './WhislistComponent/WhislistComponent.component';
+import { PizzaCreateComponent } from './Pizza/pizza-create/pizza-create.component';
+import { PizzaManagerComponent } from './Areas/admin-area/Components/pizza-manager/pizza-manager.component';
 
 const notifierOptions: NotifierOptions = {
   position: {horizontal: { position: 'right' }, vertical: { position: 'top' }}
@@ -41,7 +43,9 @@ const notifierOptions: NotifierOptions = {
       UserManagerComponent,
       PizzaListComponent,
       PizzaItemComponent,
-      WhislistComponentComponent
+      WhislistComponentComponent,
+      PizzaCreateComponent,
+      PizzaManagerComponent
    ],
    imports: [
       BrowserModule.withServerTransition({appId: 'ng-cli-universal'}),
