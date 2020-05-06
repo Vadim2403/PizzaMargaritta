@@ -62,6 +62,7 @@ import { NzTreeSelectModule } from 'ng-zorro-antd/tree-select';
 import { NzTypographyModule } from 'ng-zorro-antd/typography';
 import { NzUploadModule } from 'ng-zorro-antd/upload';
 import { NzResizableModule } from 'ng-zorro-antd/resizable';
+import { NgZorroAntdModule } from 'ng-zorro-antd';
 @NgModule({
   exports: [
     NzAffixModule,
@@ -125,7 +126,8 @@ import { NzResizableModule } from 'ng-zorro-antd/resizable';
     NzTreeSelectModule,
     NzTypographyModule,
     NzUploadModule,
-    NzResizableModule
+    NzResizableModule,
+    NgZorroAntdModule
   ]
 })
 export class DemoNgZorroAntdModule {
