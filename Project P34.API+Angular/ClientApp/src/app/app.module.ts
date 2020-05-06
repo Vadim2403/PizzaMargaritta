@@ -21,12 +21,8 @@ import { UserAreaComponent } from './Areas/user-area/user-area.component';
 import { PizzaListComponent } from './Pizza/pizza-list/pizza-list.component';
 import { PizzaItemComponent } from './Pizza/pizza-list/pizza-item/pizza-item.component';
 import { WhislistComponentComponent } from './WhislistComponent/WhislistComponent.component';
-import { DemoNgZorroAntdModule } from './ng-zoro-antd.module';
-import { registerLocaleData } from '@angular/common';
-import en from '@angular/common/locales/en';
-registerLocaleData(en);
-
-import { NZ_I18N, en_US } from 'ng-zorro-antd/i18n';
+import { PizzaCreateComponent } from './Pizza/pizza-create/pizza-create.component';
+import { PizzaManagerComponent } from './Areas/admin-area/Components/pizza-manager/pizza-manager.component';
 
 const notifierOptions: NotifierOptions = {
   position: {horizontal: { position: 'right' }, vertical: { position: 'top' }}
@@ -47,7 +43,9 @@ const notifierOptions: NotifierOptions = {
       UserManagerComponent,
       PizzaListComponent,
       PizzaItemComponent,
-      WhislistComponentComponent
+      WhislistComponentComponent,
+      PizzaCreateComponent,
+      PizzaManagerComponent
    ],
    imports: [
       BrowserModule.withServerTransition({appId: 'ng-cli-universal'}),
@@ -56,12 +54,11 @@ const notifierOptions: NotifierOptions = {
       AppRoutingModule,
       NotifierModule.withConfig(notifierOptions),
       BrowserAnimationsModule,
-      NgxSpinnerModule,
-      DemoNgZorroAntdModule
+      NgxSpinnerModule
    ],
-   
+     
 
-   providers: [ { provide: NZ_I18N, useValue: en_US}],
+  providers: [],
   bootstrap: [AppComponent]
 })
 

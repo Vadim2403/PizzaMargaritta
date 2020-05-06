@@ -1,0 +1,15 @@
+<div class="row">
+  <div class="container">
+      <div class="col-lg-5 col-md-5 col-sm-5 col-12">
+      <input [(ngModel)]="pizzaModel.name" type="text" class="form-control" name="" id="" placeholder="Enter Name">
+      <input [(ngModel)]="pizzaModel.description"  type="text"  class="form-control" name="" id="" multiple placeholder="Enter description">
+      <input [(ngModel)]="pizzaModel.price"  type="number" class="form-control" name="" id="" placeholder="Enter price">
+      <input [(ngModel)]="pizzaModel.image"  type="text"class="form-control" name="" id="" placeholder="Enter image">
+
+      <button (click)="createPizza()" class="btn btn-success">Create</button>
+    </div>
+    <app-pizza-item [pizza] = "pizzaModel" class="col-lg-3 col-md-3 col-sm-3 col-12"></app-pizza-item>
+</div>
+
+</div>
+

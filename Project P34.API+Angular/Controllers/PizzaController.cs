@@ -48,7 +48,7 @@ namespace Project_P34.API_Angular.Controllers
             return result;
         }
 
-        [HttpPost]
+        [HttpPost("addpizza")]
         public ResultDto AddPizza([FromBody]PizzaViewModel model)
         {
             _context.pizzas.Add(new Pizza()
@@ -59,6 +59,7 @@ namespace Project_P34.API_Angular.Controllers
                 Name = model.Name,
                 Price = model.Price
             });
+            _context.SaveChanges();
             return new ResultDto() { Message = "Added",Status=200};
         }
 
