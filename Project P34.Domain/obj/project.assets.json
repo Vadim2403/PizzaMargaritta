@@ -4318,25 +4318,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Morgan\\.nuget\\packages\\": {},
-    "C:\\Microsoft\\Xamarin\\NuGet\\": {}
+    "C:\\Users\\Администратор\\.nuget\\packages\\": {},
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Morgan\\Source\\Repos\\PizzaMargarittaCourse\\Project P34.Domain\\Project P34.Domain.csproj",
+      "projectUniqueName": "C:\\Users\\Администратор\\Source\\Repos\\PizzaMargarittaClone\\Project P34.Domain\\Project P34.Domain.csproj",
       "projectName": "Project P34.Domain",
-      "projectPath": "C:\\Users\\Morgan\\Source\\Repos\\PizzaMargarittaCourse\\Project P34.Domain\\Project P34.Domain.csproj",
-      "packagesPath": "C:\\Users\\Morgan\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Morgan\\Source\\Repos\\PizzaMargarittaCourse\\Project P34.Domain\\obj\\",
+      "projectPath": "C:\\Users\\Администратор\\Source\\Repos\\PizzaMargarittaClone\\Project P34.Domain\\Project P34.Domain.csproj",
+      "packagesPath": "C:\\Users\\Администратор\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Администратор\\Source\\Repos\\PizzaMargarittaClone\\Project P34.Domain\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "C:\\Microsoft\\Xamarin\\NuGet\\"
+        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\Morgan\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        "C:\\Users\\Администратор\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp3.1"
@@ -4348,8 +4347,8 @@
       "frameworks": {
         "netcoreapp3.1": {
           "projectReferences": {
-            "C:\\Users\\Morgan\\Source\\Repos\\PizzaMargarittaCourse\\Project P34.DataAccess\\Project P34.DataAccess.csproj": {
-              "projectPath": "C:\\Users\\Morgan\\Source\\Repos\\PizzaMargarittaCourse\\Project P34.DataAccess\\Project P34.DataAccess.csproj"
+            "C:\\Users\\Администратор\\Source\\Repos\\PizzaMargarittaClone\\Project P34.DataAccess\\Project P34.DataAccess.csproj": {
+              "projectPath": "C:\\Users\\Администратор\\Source\\Repos\\PizzaMargarittaClone\\Project P34.DataAccess\\Project P34.DataAccess.csproj"
             }
           }
         }
