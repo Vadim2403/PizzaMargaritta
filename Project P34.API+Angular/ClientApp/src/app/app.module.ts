@@ -23,7 +23,12 @@ import { PizzaItemComponent } from './Pizza/pizza-list/pizza-item/pizza-item.com
 import { WhislistComponentComponent } from './WhislistComponent/WhislistComponent.component';
 import { PizzaCreateComponent } from './Pizza/pizza-create/pizza-create.component';
 import { PizzaManagerComponent } from './Areas/admin-area/Components/pizza-manager/pizza-manager.component';
+import { NgZorroAntdModule } from 'ng-zorro-antd';
+import { registerLocaleData } from '@angular/common';
+import en from '@angular/common/locales/en';
+registerLocaleData(en);
 
+import { NZ_I18N, en_US } from 'ng-zorro-antd/i18n';
 const notifierOptions: NotifierOptions = {
   position: {horizontal: { position: 'right' }, vertical: { position: 'top' }}
 };
@@ -54,11 +59,12 @@ const notifierOptions: NotifierOptions = {
       AppRoutingModule,
       NotifierModule.withConfig(notifierOptions),
       BrowserAnimationsModule,
-      NgxSpinnerModule
+      NgxSpinnerModule,
+      NgZorroAntdModule
    ],
      
 
-  providers: [],
+  providers: [{provide: NZ_I18N, useValue: en_US}],
   bootstrap: [AppComponent]
 })
 

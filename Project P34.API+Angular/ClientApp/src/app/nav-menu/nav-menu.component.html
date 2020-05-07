@@ -2,6 +2,7 @@
   <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
     <div class="container">
       <a class="navbar-brand" [routerLink]="['/']">Project_P34.API_Angular</a>
+      <a class="nav-link text-dark logout effect-underline">You didn`t found what you need? Create yours pizza</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse"
         aria-label="Toggle navigation" [attr.aria-expanded]="isExpanded" (click)="toggle()">
         <span class="navbar-toggler-icon"></span>
@@ -16,10 +17,11 @@
               <a class="nav-link text-dark" [routerLink]="['register']">Register</a>
             </li>
           
+      
 
 
           <li *ngIf="isLoggedIn === true" class="nav-item">
-            <a class="nav-link text-dark" [routerLink]="['whishlist']">Whishlist</a>
+            <a class="nav-link text-dark logout" [routerLink]="['whishlist']">Whishlist</a>
           </li>
           <li  *ngIf="isLoggedIn === true" class="nav-item logout">
             <a (click)="Logout()" class="nav-link text-dark">Logout</a>
