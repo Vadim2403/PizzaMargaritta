@@ -53,7 +53,7 @@ namespace Project_P34.API_Angular.Controllers
         }
 
         [HttpPost("RemoveUser/{id}")]
-        public ResultDto RemoveUser([FromBody]string id)
+        public ResultDto RemoveUser([FromRoute]string id)
         {
             try
             {

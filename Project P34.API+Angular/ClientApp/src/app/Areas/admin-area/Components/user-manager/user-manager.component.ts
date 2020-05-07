@@ -17,6 +17,8 @@ export class UserManagerComponent implements OnInit {
               private spinner: NgxSpinnerService,
               private notifier: NotifierService) { }
   listOfData: UserItem[] = [];
+  searchResult: UserItem[] = [];
+  searchText: string;
 
   deleteUser(id : string){
     this.spinner.show();
@@ -26,8 +28,9 @@ export class UserManagerComponent implements OnInit {
       (data: ApiResult) => {
         if(data.status == 200)
         {
-        this.notifier.notify('succes', "User removed");
-        
+        this.notifier.notify('success', "User removed");
+          this.listOfData = this.listOfData.filter(x => x.id != id);
+          this.searchResult = this.searchResult.filter(x => x.id != id);
         }
         else{
           for(var i = 0; i < data.errors; i++){
@@ -47,11 +50,16 @@ export class UserManagerComponent implements OnInit {
 
       (allUsers: UserItem[]) => {
         this.listOfData = allUsers;
+        this.searchResult = allUsers;
         this.spinner.hide();
       }
 
     );
 
+  }
+
+  Search(){
+    this.searchResult = this.listOfData.filter(x => x.fullName.includes(this.searchText) || x.email.includes(this.searchText));
   }
 
 }

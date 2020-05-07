@@ -1,4 +1,8 @@
-<nz-table #rowSelectionTable nzShowSizeChanger [nzData]="listOfData">
+<h2>User management</h2>
+
+<input class="input-user-search" type="text" name="search" [(ngModel)]="searchText" (ngModelChange)="Search()" nz-input placeholder="search..."/>
+
+<nz-table #rowSelectionTable nzShowSizeChanger [nzData]="searchResult">
   <thead>
     <tr>
       <th nzWidth="30%">Name</th>

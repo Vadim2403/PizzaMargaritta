@@ -1,0 +1,29 @@
+<h3>Редагування клієнта:</h3>
+<div *ngIf="model">
+
+  <nz-form-item>
+    <nz-form-control>
+      <nz-input-group nzPrefixIcon="user">
+        <input type="text" name="Id" [(ngModel)]="model.fullName" nz-input placeholder="П.І.Б" />
+      </nz-input-group>
+    </nz-form-control>
+  </nz-form-item>
+
+
+  <nz-form-item>
+    <nz-form-control>
+      <nz-input-group nzPrefixIcon="phone">
+        <input type="text" name="Id" [(ngModel)]="model.phone" prefix='+38' mask='(000) 000-00-00' nz-input
+          placeholder="Номер телефону" />
+      </nz-input-group>
+    </nz-form-control>
+  </nz-form-item>
+
+
+  <button nz-button class=" login-form-margin" [nzType]="'primary'" (click)="submitForm()">Зберегти зміни</button>
+  <button nz-button class=" login-form-margin baseBg text-color-white baseButton"
+    [routerLink]="['/admin-panel/user-manager']">Скасувати редагування</button>
+
+
+
+</div>
