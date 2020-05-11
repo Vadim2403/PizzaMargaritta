@@ -1,0 +1,28 @@
+<div class="container">
+  <div style="background-color: white; padding: 5px; border-radius: 5px;">
+<nz-table #basicTable [nzData]="pizzas">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Description</th>
+      <th>Price</th>
+      <th>ImageURL</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let data of basicTable.data">
+      <td>{{data.name}}</td>
+      <td>{{data.description}}</td>
+      <td>{{data.price}}</td>
+      <td>{{data.image}}</td>
+      <td>
+
+        <a nz-button nzType="primary" nz-popconfirm nzPopconfirmTitle="Are you sure?" (nzOnConfirm)="deletePizza(data.id)">Delete</a>
+        <a nz-button nzType="primary"  [routerLink]="['pizza-edit/', data.id]" routerLinkActive="router-link-active"  >Edit</a>
+      </td>
+    </tr>
+  </tbody>
+</nz-table>
+</div>
+</div>

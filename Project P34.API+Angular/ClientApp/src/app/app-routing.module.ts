@@ -18,6 +18,7 @@ import { WhislistComponentComponent } from './WhislistComponent/WhislistComponen
 import { PizzaManagerComponent } from './Areas/admin-area/Components/pizza-manager/pizza-manager.component';
 import { CreatorComponent } from './Creator/Creator.component';
 import { UserEditComponent } from './Areas/admin-area/Components/user-manager/UserEdit/UserEdit.component';
+import { PizzaEditComponent } from './Pizza/pizza-edit/pizza-edit.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent, pathMatch: 'full'},
@@ -34,7 +35,9 @@ const routes: Routes = [
     children: [
       { path: '', component: DashboardComponent, pathMatch: 'full' },
       { path: 'user-manager', component: UserManagerComponent, pathMatch: 'full' },
-      { path: 'pizza-manager', component: PizzaManagerComponent, pathMatch: 'full'},
+      { path: 'pizza-manager', component: PizzaManagerComponent, children: [
+        {path: 'pizza-edit/:id', component: PizzaEditComponent, pathMatch: 'full'}
+      ]},
       { path: 'edit-user/:id', component: UserEditComponent, pathMatch: 'full' }
     ]
   },
