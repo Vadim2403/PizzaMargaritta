@@ -953,11 +953,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Администратор\\Source\\Repos\\PizzaMargarittaClone\\Project P34.DataAccess\\Project P34.DataAccess.csproj",
+      "projectUniqueName": "C:\\Users\\Администратор\\Source\\Repos\\PizzaMargaritta\\Project P34.DataAccess\\Project P34.DataAccess.csproj",
       "projectName": "Project P34.DataAccess",
-      "projectPath": "C:\\Users\\Администратор\\Source\\Repos\\PizzaMargarittaClone\\Project P34.DataAccess\\Project P34.DataAccess.csproj",
+      "projectPath": "C:\\Users\\Администратор\\Source\\Repos\\PizzaMargaritta\\Project P34.DataAccess\\Project P34.DataAccess.csproj",
       "packagesPath": "C:\\Users\\Администратор\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Администратор\\Source\\Repos\\PizzaMargarittaClone\\Project P34.DataAccess\\obj\\",
+      "outputPath": "C:\\Users\\Администратор\\Source\\Repos\\PizzaMargaritta\\Project P34.DataAccess\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

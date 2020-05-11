@@ -824,11 +824,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Администратор\\Source\\Repos\\PizzaMargarittaClone\\Project P34.DTO\\Project P34.DTO.csproj",
+      "projectUniqueName": "C:\\Users\\Администратор\\Source\\Repos\\PizzaMargaritta\\Project P34.DTO\\Project P34.DTO.csproj",
       "projectName": "Project P34.DTO",
-      "projectPath": "C:\\Users\\Администратор\\Source\\Repos\\PizzaMargarittaClone\\Project P34.DTO\\Project P34.DTO.csproj",
+      "projectPath": "C:\\Users\\Администратор\\Source\\Repos\\PizzaMargaritta\\Project P34.DTO\\Project P34.DTO.csproj",
       "packagesPath": "C:\\Users\\Администратор\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Администратор\\Source\\Repos\\PizzaMargarittaClone\\Project P34.DTO\\obj\\",
+      "outputPath": "C:\\Users\\Администратор\\Source\\Repos\\PizzaMargaritta\\Project P34.DTO\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -847,8 +847,8 @@
       "frameworks": {
         "netcoreapp3.1": {
           "projectReferences": {
-            "C:\\Users\\Администратор\\Source\\Repos\\PizzaMargarittaClone\\Project P34.DataAccess\\Project P34.DataAccess.csproj": {
-              "projectPath": "C:\\Users\\Администратор\\Source\\Repos\\PizzaMargarittaClone\\Project P34.DataAccess\\Project P34.DataAccess.csproj"
+            "C:\\Users\\Администратор\\Source\\Repos\\PizzaMargaritta\\Project P34.DataAccess\\Project P34.DataAccess.csproj": {
+              "projectPath": "C:\\Users\\Администратор\\Source\\Repos\\PizzaMargaritta\\Project P34.DataAccess\\Project P34.DataAccess.csproj"
             }
           }
         }
