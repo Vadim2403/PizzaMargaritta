@@ -28,8 +28,17 @@ export class ApiService {
   GetPizzas() {
     return this.http.get<Pizza[]>('/api/pizzas');
   }
+  DeletePizza(id: string) {
+    return this.http.get<ApiResult>('/api/pizzas/delete/' + id);
+  }
+  EditPizza(pizza: Pizza) {
+    return this.http.post<ApiResult>('/api/pizzas/edit', pizza);
+  }
+  GetPizza(id: string): Observable<Pizza> {
+    return this.http.get<Pizza>('/api/pizzas/' + id);
+  }
 
-  GetIngrdients(){
+  GetIngrdients() {
     return this.http.get<Ingredient[]>('/api/ingredients');
   }
   AddPizza(PizzaModel: PizzaCreate){

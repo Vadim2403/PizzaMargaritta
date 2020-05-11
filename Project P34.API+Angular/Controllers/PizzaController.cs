@@ -62,7 +62,36 @@ namespace Project_P34.API_Angular.Controllers
             _context.SaveChanges();
             return new ResultDto() { Message = "Added",Status=200};
         }
-        
+        [HttpGet("delete/{id}")]
+        public ResultDto DeletePizza([FromRoute]string id)
+        {
+            var pizza = _context.pizzas.FirstOrDefault(x => x.Id == id);
+            if(pizza != null)
+            {
+                _context.pizzas.Remove(pizza);
+                _context.SaveChanges();
+                return new ResultDto() { Message = "Deleted successfully", Status = 200 };
+            }
+            return new ResultDto() { Message = "Not found", Status = 404 };
+
+        }
+        [HttpPost("edit")]
+        public ResultDto EditPizza([FromBody] PizzaViewModel model)
+        {
+            var _pizza = _context.pizzas.FirstOrDefault(x => x.Id == model.Id);
+            if(_pizza != null)
+            {
+                _pizza.Image = model.Image;
+                _pizza.Name = model.Name;
+                _pizza.Price = model.Price;
+                _pizza.Description = model.Description;
+                _context.SaveChanges();
+
+                return new ResultDto() { Message = "Edited successfully", Status = 200 };
+            }
+            return new ResultDto() { Message = "Not found", Status = 404 };
+
+        }
 
     }
 }
