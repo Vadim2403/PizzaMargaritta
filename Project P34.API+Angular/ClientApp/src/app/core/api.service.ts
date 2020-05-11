@@ -7,6 +7,7 @@ import { ApiResult } from '../Models/result.model';
 import { Pizza } from '../Models/pizza.model';
 import { EventEmitter } from '@angular/core';
 import { PizzaCreate } from '../Models/pizza-create';
+import { Ingredient } from '../Models/ingredient.model';
 
 @Injectable({
   providedIn: 'root'
@@ -26,6 +27,10 @@ export class ApiService {
 
   GetPizzas() {
     return this.http.get<Pizza[]>('/api/pizzas');
+  }
+
+  GetIngrdients(){
+    return this.http.get<Ingredient[]>('/api/ingredients');
   }
   AddPizza(PizzaModel: PizzaCreate){
     return this.http.post<ApiResult>('/api/pizzas/addpizza', PizzaModel);

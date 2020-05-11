@@ -1,7 +1,7 @@
-<h2>User management</h2>
+
 
 <input class="input-user-search" type="text" name="search" [(ngModel)]="searchText" (ngModelChange)="Search()" nz-input placeholder="search..."/>
-
+<div style="background-color: white;">
 <nz-table #rowSelectionTable nzShowSizeChanger [nzData]="searchResult">
   <thead>
     <tr>
@@ -24,7 +24,9 @@
       <td>{{ data.phone }}</td>
       <td>
         <a nz-button nzType="primary" style="color:white" nz-popconfirm nzPopconfirmTitle="Are you sure?" (nzOnConfirm)="deleteUser(data.id)">Delete</a>
+        <a nz-button nzType="primary" style="color:white" [routerLink]="['/admin-panel/edit-user/',data.id]" >Edit</a>
       </td>
     </tr>
   </tbody>
 </nz-table>
+</div>
