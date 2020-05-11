@@ -1,13 +1,18 @@
 <router-outlet>
-
+  
 <div class="container">
-  <div class="row" style="float: left;">
-        <h3  style="display: inherit;">Choose one</h3>
-        <app-ingredient-item *ngFor="let item of ingredients;let i = index" [ingredient] = "item" (outToParent)="receiveFromChild($event)" class="col-lg-3 col-md-4"></app-ingredient-item>
+  <h3>Choose one of them</h3>
+  <div class="row" style="float: left; width: 50%; height: 1200px;">
+
+        <app-ingredient-item style="float: left;" *ngFor="let item of ingredients;let i = index" [ingredient] = "item" [btnText] = "'Add'" (outToParent)="receiveFromChild($event)" class="col-lg-3 col-md-4"></app-ingredient-item>
   </div>
-  <div class="row">
-      <h3 style="float: none;">Your pizza</h3>
-      <app-ingredient-item   *ngFor="let item1 of choosed;let i = index"  [ingredient] = "item1"  class="col-lg-3 col-md-4"></app-ingredient-item>
+  <div>
+  <h3>Your pizza</h3>
+  <a (click)="Send()">Add to Wishlist</a>
+  <div class="row" style="width: 50%; height: 1200px;">
+      <app-ingredient-item   *ngFor="let item1 of choosed;let i = index"  [ingredient] = "item1" [btnText] = "'Remove'" (outToParent)="receiveFromChild($event)" class="col-lg-3 col-md-4"></app-ingredient-item>
   </div>
+ 
+</div>
   </div>
   </router-outlet>

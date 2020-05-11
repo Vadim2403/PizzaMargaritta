@@ -1,11 +1,13 @@
-<div>
+<div class="ingredint_item">
   
       <img src="{{ ingredient.image }}" alt="">
+      <div style="float: left;">
       <h3>
         {{ingredient.name}}
       </h3>
       <p>{{ingredient.price}}$</p>
-      <button (click)="sendToParent(ingredient.id)">Add</button>
+      <button id="buttonka" (click)="sendToParent(ingredient.id)">{{btnText}}</button>
+      </div>
   
       
   </div>
