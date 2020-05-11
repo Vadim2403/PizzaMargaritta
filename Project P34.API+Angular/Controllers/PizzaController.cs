@@ -49,7 +49,7 @@ namespace Project_P34.API_Angular.Controllers
         }
 
         [HttpPost("addpizza")]
-        public ResultDto AddPizza([FromBody]PizzaViewModel model)
+        public ResultDto AddPizza([FromBody]PizzaCreateViewModel model)
         {
             _context.pizzas.Add(new Pizza()
             {

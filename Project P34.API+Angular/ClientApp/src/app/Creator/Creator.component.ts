@@ -5,6 +5,7 @@ import { NgxSpinnerService } from 'ngx-spinner';
 import { NotifierService } from 'angular-notifier';
 import { Router } from '@angular/router';
 import { Size } from 'ngx-spinner/lib/ngx-spinner.enum';
+import { CustomPizzaService } from 'src/Services/CustomPizza.service';
 
 @Component({
   selector: 'app-Creator',
@@ -14,13 +15,14 @@ import { Size } from 'ngx-spinner/lib/ngx-spinner.enum';
 export class CreatorComponent implements OnInit {
  
   public ingredients: Ingredient[];
-  public choosed: Ingredient[];
+  public choosed: Ingredient[] = [];
   public idOFclicked: string;
   public toBascket : Ingredient;
   constructor(private apiService: ApiService,
     private spinner: NgxSpinnerService,
     private notifier: NotifierService,
-    private router: Router) { }
+    private router: Router,
+    private resender: CustomPizzaService) { }
 
   ngOnInit() {
     this.spinner.show();
@@ -30,10 +32,22 @@ export class CreatorComponent implements OnInit {
     });
   }
   receiveFromChild(event : string){
-    alert(event);
     this.idOFclicked = event;
     this.toBascket = this.ingredients.find(x => x.id == this.idOFclicked);
-    // this.choosed.push(this.toBascket); <--- нерабоче гавно
-    alert("If ти see це message це means що this частина of code не work");
+    if(this.toBascket != null){
+    this.choosed.push(this.toBascket);
+    var idshka = this.ingredients.indexOf(this.toBascket);
+    this.ingredients.splice(idshka,1);
+    }
+    else{
+      this.toBascket = this.choosed.find(x => x.id == this.idOFclicked);
+      this.ingredients.push(this.toBascket);
+      var idshka = this.choosed.indexOf(this.toBascket);
+      this.choosed.splice(idshka,1);
+    }
+    // alert("If ти see це message це means що this частина of code не work");
+    }
+    Send(){
+      this.resender.CreatePizza(this.choosed);
     }
 }

@@ -10,13 +10,14 @@ export class IngredientItemComponent implements OnInit {
 
   @Input() ingredient: Ingredient;
   @Output() public outToParent = new EventEmitter();
+  @Input() btnText: string;
   constructor() { }
 
   ngOnInit() {
   }
 
   sendToParent(id : string) {
-    alert("Id from child " + id);
+    
     this.outToParent.emit(id);
   }
 
