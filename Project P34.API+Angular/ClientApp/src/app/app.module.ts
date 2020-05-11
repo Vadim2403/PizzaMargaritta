@@ -29,6 +29,10 @@ import en from '@angular/common/locales/en';
 registerLocaleData(en);
 
 import { NZ_I18N, en_US } from 'ng-zorro-antd/i18n';
+import { CreatorComponent } from './Creator/Creator.component';
+import { IngredientItemComponent } from './Creator/ingredient-item/ingredient-item.component';
+import { DemoNgZorroAntdModule } from './ng-zoro-antd.module';
+import { UserEditComponent } from './Areas/admin-area/Components/user-manager/UserEdit/UserEdit.component';
 const notifierOptions: NotifierOptions = {
   position: {horizontal: { position: 'right' }, vertical: { position: 'top' }}
 };
@@ -50,7 +54,11 @@ const notifierOptions: NotifierOptions = {
       PizzaItemComponent,
       WhislistComponentComponent,
       PizzaCreateComponent,
-      PizzaManagerComponent
+      PizzaManagerComponent,
+      CreatorComponent,
+      IngredientItemComponent,
+      CreatorComponent,
+      UserEditComponent
    ],
    imports: [
       BrowserModule.withServerTransition({appId: 'ng-cli-universal'}),
@@ -60,8 +68,10 @@ const notifierOptions: NotifierOptions = {
       NotifierModule.withConfig(notifierOptions),
       BrowserAnimationsModule,
       NgxSpinnerModule,
-      NgZorroAntdModule
+      DemoNgZorroAntdModule
    ],
+
+
      
 
   providers: [{provide: NZ_I18N, useValue: en_US}],

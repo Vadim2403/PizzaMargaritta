@@ -16,14 +16,9 @@ namespace Project_P34.DataAccess.Entity
         public string Name { get; set; }
         [Required]
         public decimal Price { get; set; }
-
-        [ForeignKey("pizza")]
-        public string  pizza_ID { get; set; }
-
         [Required]
         public string Image { get; set; }
 
-        public Pizza pizza { get; set; }
 
     }
 }

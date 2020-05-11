@@ -16,12 +16,15 @@ import { Routes, RouterModule } from '@angular/router';
 import { AdminAreaComponent } from './Areas/admin-area/admin-area.component';
 import { WhislistComponentComponent } from './WhislistComponent/WhislistComponent.component';
 import { PizzaManagerComponent } from './Areas/admin-area/Components/pizza-manager/pizza-manager.component';
+import { CreatorComponent } from './Creator/Creator.component';
+import { UserEditComponent } from './Areas/admin-area/Components/user-manager/UserEdit/UserEdit.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent, pathMatch: 'full'},
   { path: 'login', component: LoginComponent, pathMatch: 'full', canActivate: [NotLoginGuard] },
   { path: 'register', component: RegisterComponent, pathMatch: 'full', canActivate: [NotLoginGuard]  },
   { path: 'whishlist', component: WhislistComponentComponent, pathMatch: 'full'},
+  { path: 'ingredients', component: CreatorComponent, pathMatch: 'full'},
 
 
   {
@@ -31,7 +34,8 @@ const routes: Routes = [
     children: [
       { path: '', component: DashboardComponent, pathMatch: 'full' },
       { path: 'user-manager', component: UserManagerComponent, pathMatch: 'full' },
-      { path: 'pizza-manager', component: PizzaManagerComponent, pathMatch: 'full'}
+      { path: 'pizza-manager', component: PizzaManagerComponent, pathMatch: 'full'},
+      { path: 'edit-user/:id', component: UserEditComponent, pathMatch: 'full' }
     ]
   },
 
