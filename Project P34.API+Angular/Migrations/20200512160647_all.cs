@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace Project_P34.API_Angular.Migrations
 {
-    public partial class newMig : Migration
+    public partial class all : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -59,6 +59,20 @@ namespace Project_P34.API_Angular.Migrations
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_tblCustoms", x => x.Id);
+                });
+
+            migrationBuilder.CreateTable(
+                name: "tblIngredients",
+                columns: table => new
+                {
+                    ID = table.Column<string>(nullable: false),
+                    Name = table.Column<string>(nullable: false),
+                    Price = table.Column<decimal>(nullable: false),
+                    Image = table.Column<string>(nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_tblIngredients", x => x.ID);
                 });
 
             migrationBuilder.CreateTable(
@@ -230,34 +244,6 @@ namespace Project_P34.API_Angular.Migrations
                         onDelete: ReferentialAction.Cascade);
                 });
 
-            migrationBuilder.CreateTable(
-                name: "tblIngredients",
-                columns: table => new
-                {
-                    ID = table.Column<string>(nullable: false),
-                    Name = table.Column<string>(nullable: false),
-                    Price = table.Column<decimal>(nullable: false),
-                    Image = table.Column<string>(nullable: false),
-                    CustomPizzaId = table.Column<string>(nullable: true),
-                    PizzaId = table.Column<string>(nullable: true)
-                },
-                constraints: table =>
-                {
-                    table.PrimaryKey("PK_tblIngredients", x => x.ID);
-                    table.ForeignKey(
-                        name: "FK_tblIngredients_tblCustoms_CustomPizzaId",
-                        column: x => x.CustomPizzaId,
-                        principalTable: "tblCustoms",
-                        principalColumn: "Id",
-                        onDelete: ReferentialAction.Restrict);
-                    table.ForeignKey(
-                        name: "FK_tblIngredients_tblPizzas_PizzaId",
-                        column: x => x.PizzaId,
-                        principalTable: "tblPizzas",
-                        principalColumn: "Id",
-                        onDelete: ReferentialAction.Restrict);
-                });
-
             migrationBuilder.CreateIndex(
                 name: "IX_AspNetRoleClaims_RoleId",
                 table: "AspNetRoleClaims",
@@ -296,16 +282,6 @@ namespace Project_P34.API_Angular.Migrations
                 column: "NormalizedUserName",
                 unique: true,
                 filter: "[NormalizedUserName] IS NOT NULL");
-
-            migrationBuilder.CreateIndex(
-                name: "IX_tblIngredients_CustomPizzaId",
-                table: "tblIngredients",
-                column: "CustomPizzaId");
-
-            migrationBuilder.CreateIndex(
-                name: "IX_tblIngredients_PizzaId",
-                table: "tblIngredients",
-                column: "PizzaId");
         }
 
         protected override void Down(MigrationBuilder migrationBuilder)
@@ -326,10 +302,16 @@ namespace Project_P34.API_Angular.Migrations
                 name: "AspNetUserTokens");
 
             migrationBuilder.DropTable(
+                name: "tblCustoms");
+
+            migrationBuilder.DropTable(
                 name: "tblIngredients");
 
             migrationBuilder.DropTable(
                 name: "tblOrder");
+
+            migrationBuilder.DropTable(
+                name: "tblPizzas");
 
             migrationBuilder.DropTable(
                 name: "tblUserMoreInfo");
@@ -339,12 +321,6 @@ namespace Project_P34.API_Angular.Migrations
 
             migrationBuilder.DropTable(
                 name: "AspNetRoles");
-
-            migrationBuilder.DropTable(
-                name: "tblCustoms");
-
-            migrationBuilder.DropTable(
-                name: "tblPizzas");
 
             migrationBuilder.DropTable(
                 name: "AspNetUsers");

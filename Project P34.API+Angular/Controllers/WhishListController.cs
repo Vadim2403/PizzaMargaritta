@@ -35,7 +35,7 @@ namespace Project_P34.API_Angular.Controllers
         {
             _context.whishlistPizzas.Add(new WhishlistPizzas()
             {
-                //Id = model.Id,
+                Id = model.Id,
                 Pizza_Id = model.Pizza_Id,
                 User_Id = model.User_Id,
             }) ;

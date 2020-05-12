@@ -41,7 +41,6 @@ namespace Project_P34.API_Angular.Controllers
                 Id = x.Id,
                 Description = x.Description,
                 Image = x.Image,
-                Ingredients = x.Ingredients,
                 Name = x.Name,
                 Price = x.Price
             });
