@@ -8,19 +8,20 @@ using Microsoft.Extensions.Configuration;
 using Project_IDA.DTO.Models.Result;
 using Project_P34.DataAccess;
 using Project_P34.DataAccess.Entity;
+using Project_P34.DataAccess.Entity.Models;
 using Project_P34.Domain.Interfaces;
 
 namespace Project_P34.API_Angular.Controllers
 {
-    [Route("api/whishlist")]
+    [Route("api/custom")]
     [ApiController]
-    public class WhishListController : ControllerBase
+    public class CustomsController : ControllerBase
     {
         private readonly EFContext _context;
         private readonly IConfiguration _configuration;
         private readonly IJWTTokenService _jwtTokenService;
 
-        public WhishListController(EFContext context,
+        public CustomsController(EFContext context,
             IConfiguration configuration,
             IJWTTokenService jWtTokenService)
         {
@@ -30,15 +31,17 @@ namespace Project_P34.API_Angular.Controllers
             _jwtTokenService = jWtTokenService;
 
         }
-        [HttpPost("addtoWhishList")]
-        public ResultDto AddToWhishList([FromBody]WhishlistPizzas model)
+        [HttpPost("addtoCustoms")]
+        public ResultDto AddToCustoms([FromBody]CustomPizza model)
         {
-            _context.whishlistPizzas.Add(new WhishlistPizzas()
+            _context.customPizzas.Add(new CustomPizza()
             {
-                Id = model.Id,
-                Pizza_Id = model.Pizza_Id,
-                User_Id = model.User_Id,
-            }) ;
+                Id = Guid.NewGuid().ToString(),
+                Description = model.Description,
+                Image = model.Image,
+                Name = model.Name,
+                Price = model.Price
+            });
             _context.SaveChanges();
             return new ResultDto() { Message = "Whishlist Updated", Status = 200 };
         }
