@@ -8,6 +8,8 @@ import { Pizza } from '../Models/pizza.model';
 import { EventEmitter } from '@angular/core';
 import { PizzaCreate } from '../Models/pizza-create';
 import { Ingredient } from '../Models/ingredient.model';
+import { WhishListPizza } from '../Models/WhishListPizza.model';
+import { v4 as uuidv4 } from 'uuid';
 
 @Injectable({
   providedIn: 'root'
@@ -37,7 +39,13 @@ export class ApiService {
   GetPizza(id: string): Observable<Pizza> {
     return this.http.get<Pizza>('/api/pizzas/' + id);
   }
-
+  AddPizzaToWhishList(pizza_id: string, user_id:string){
+    var newWhPizza = new WhishListPizza();
+    newWhPizza.id = uuidv4();
+    newWhPizza.pizza_id = pizza_id;
+    newWhPizza.user_id = user_id;
+    return this.http.post<ApiResult>('/api/whishlist/AddToWhishList', newWhPizza);
+  }
   GetIngrdients() {
     return this.http.get<Ingredient[]>('/api/ingredients');
   }

@@ -10,8 +10,8 @@ using Project_P34.DataAccess;
 namespace Project_P34.API_Angular.Migrations
 {
     [DbContext(typeof(EFContext))]
-    [Migration("20200510180316_ingTblchanges")]
-    partial class ingTblchanges
+    [Migration("20200512154129_newMig")]
+    partial class newMig
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -152,9 +152,37 @@ namespace Project_P34.API_Angular.Migrations
                     b.ToTable("AspNetUserTokens");
                 });
 
+            modelBuilder.Entity("Project_P34.DataAccess.Entity.CustomPizza", b =>
+                {
+                    b.Property<string>("Id")
+                        .HasColumnType("nvarchar(450)");
+
+                    b.Property<string>("Description")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Image")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<decimal>("Price")
+                        .HasColumnType("decimal(18,2)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("tblCustoms");
+                });
+
             modelBuilder.Entity("Project_P34.DataAccess.Entity.Ingredient", b =>
                 {
                     b.Property<string>("ID")
+                        .HasColumnType("nvarchar(450)");
+
+                    b.Property<string>("CustomPizzaId")
                         .HasColumnType("nvarchar(450)");
 
                     b.Property<string>("Image")
@@ -172,6 +200,8 @@ namespace Project_P34.API_Angular.Migrations
                         .HasColumnType("decimal(18,2)");
 
                     b.HasKey("ID");
+
+                    b.HasIndex("CustomPizzaId");
 
                     b.HasIndex("PizzaId");
 
@@ -314,6 +344,24 @@ namespace Project_P34.API_Angular.Migrations
                     b.ToTable("tblUserMoreInfo");
                 });
 
+            modelBuilder.Entity("Project_P34.DataAccess.Entity.WhishlistPizzas", b =>
+                {
+                    b.Property<string>("Id")
+                        .HasColumnType("nvarchar(450)");
+
+                    b.Property<string>("Pizza_Id")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("User_Id")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("tblWhislistPizzas");
+                });
+
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<string>", b =>
                 {
                     b.HasOne("Microsoft.AspNetCore.Identity.IdentityRole", null)
@@ -367,6 +415,10 @@ namespace Project_P34.API_Angular.Migrations
 
             modelBuilder.Entity("Project_P34.DataAccess.Entity.Ingredient", b =>
                 {
+                    b.HasOne("Project_P34.DataAccess.Entity.CustomPizza", null)
+                        .WithMany("Ingredients")
+                        .HasForeignKey("CustomPizzaId");
+
                     b.HasOne("Project_P34.DataAccess.Entity.Pizza", null)
                         .WithMany("Ingredients")
                         .HasForeignKey("PizzaId");
