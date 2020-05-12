@@ -35,6 +35,8 @@ import { DemoNgZorroAntdModule } from './ng-zoro-antd.module';
 import { UserEditComponent } from './Areas/admin-area/Components/user-manager/UserEdit/UserEdit.component';
 import { PizzaForAdminListComponent } from './Pizza/pizza-for-admin-list/pizza-for-admin-list.component';
 import { PizzaEditComponent } from './Pizza/pizza-edit/pizza-edit.component';
+import { TileRouterLinkListComponent } from './tile-router-link-list/tile-router-link-list.component';
+import { TileRouterLinkItemComponent } from './tile-router-link-list/tile-router-link-item/tile-router-link-item.component';
 const notifierOptions: NotifierOptions = {
   position: {horizontal: { position: 'right' }, vertical: { position: 'top' }}
 };
@@ -63,6 +65,8 @@ const notifierOptions: NotifierOptions = {
       UserEditComponent,
       PizzaForAdminListComponent,
       PizzaEditComponent,
+      TileRouterLinkListComponent,
+      TileRouterLinkItemComponent,
    ],
    imports: [
       BrowserModule.withServerTransition({appId: 'ng-cli-universal'}),
@@ -77,7 +81,7 @@ const notifierOptions: NotifierOptions = {
    ],
 
 
-     
+
 
   providers: [{provide: NZ_I18N, useValue: en_US}],
   bootstrap: [AppComponent]

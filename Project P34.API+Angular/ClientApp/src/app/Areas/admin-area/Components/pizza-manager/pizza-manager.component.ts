@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { TileRouterLink } from 'src/app/Models/tile-router-link';
 
 @Component({
   selector: 'app-pizza-manager',
@@ -6,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./pizza-manager.component.css']
 })
 export class PizzaManagerComponent implements OnInit {
+
+  list: TileRouterLink[] = [new TileRouterLink('PizzaTable', 'Piasasdsad', 'admin-panel/pizza-manager/pizza-table'), new TileRouterLink('Create new pizza', 'laps', 'admin-panel/pizza-manager/create-pizza')];
 
   constructor() { }
 

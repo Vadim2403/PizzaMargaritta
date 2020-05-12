@@ -19,6 +19,8 @@ import { PizzaManagerComponent } from './Areas/admin-area/Components/pizza-manag
 import { CreatorComponent } from './Creator/Creator.component';
 import { UserEditComponent } from './Areas/admin-area/Components/user-manager/UserEdit/UserEdit.component';
 import { PizzaEditComponent } from './Pizza/pizza-edit/pizza-edit.component';
+import { PizzaForAdminListComponent } from './Pizza/pizza-for-admin-list/pizza-for-admin-list.component';
+import { PizzaCreateComponent } from './Pizza/pizza-create/pizza-create.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent, pathMatch: 'full'},
@@ -36,7 +38,9 @@ const routes: Routes = [
       { path: '', component: DashboardComponent, pathMatch: 'full' },
       { path: 'user-manager', component: UserManagerComponent, pathMatch: 'full' },
       { path: 'pizza-manager', component: PizzaManagerComponent, children: [
-        {path: 'pizza-edit/:id', component: PizzaEditComponent, pathMatch: 'full'}
+        {path: 'pizza-edit/:id', component: PizzaEditComponent, pathMatch: 'full'},
+        {path: 'pizza-table', component: PizzaForAdminListComponent, pathMatch: 'full'},
+        {path: 'create-pizza', component: PizzaCreateComponent, pathMatch: 'full'}
       ]},
       { path: 'edit-user/:id', component: UserEditComponent, pathMatch: 'full' }
     ]
