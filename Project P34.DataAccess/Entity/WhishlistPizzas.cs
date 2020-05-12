@@ -10,7 +10,7 @@ namespace Project_P34.DataAccess.Entity
     public class WhishlistPizzas
     {
         [Key]
-        public int ID { get; set; }
+        public string ID { get; set; }
         [Required]
         public string Pizza_Id { get; set; }
         [Required]
