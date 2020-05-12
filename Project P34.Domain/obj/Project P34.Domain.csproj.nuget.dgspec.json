@@ -1,24 +1,25 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Администратор\\Source\\Repos\\PizzaMargaritta\\Project P34.Domain\\Project P34.Domain.csproj": {}
+    "C:\\Users\\Morgan\\Source\\Repos\\PizzaMargarittaCourse\\Project P34.Domain\\Project P34.Domain.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Администратор\\Source\\Repos\\PizzaMargaritta\\Project P34.DataAccess\\Project P34.DataAccess.csproj": {
+    "C:\\Users\\Morgan\\Source\\Repos\\PizzaMargarittaCourse\\Project P34.DataAccess\\Project P34.DataAccess.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Администратор\\Source\\Repos\\PizzaMargaritta\\Project P34.DataAccess\\Project P34.DataAccess.csproj",
+        "projectUniqueName": "C:\\Users\\Morgan\\Source\\Repos\\PizzaMargarittaCourse\\Project P34.DataAccess\\Project P34.DataAccess.csproj",
         "projectName": "Project P34.DataAccess",
-        "projectPath": "C:\\Users\\Администратор\\Source\\Repos\\PizzaMargaritta\\Project P34.DataAccess\\Project P34.DataAccess.csproj",
-        "packagesPath": "C:\\Users\\Администратор\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Администратор\\Source\\Repos\\PizzaMargaritta\\Project P34.DataAccess\\obj\\",
+        "projectPath": "C:\\Users\\Morgan\\Source\\Repos\\PizzaMargarittaCourse\\Project P34.DataAccess\\Project P34.DataAccess.csproj",
+        "packagesPath": "C:\\Users\\Morgan\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Morgan\\Source\\Repos\\PizzaMargarittaCourse\\Project P34.DataAccess\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+          "C:\\Microsoft\\Xamarin\\NuGet\\"
         ],
         "configFilePaths": [
-          "C:\\Users\\Администратор\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\Morgan\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"
@@ -81,21 +82,22 @@
         }
       }
     },
-    "C:\\Users\\Администратор\\Source\\Repos\\PizzaMargaritta\\Project P34.Domain\\Project P34.Domain.csproj": {
+    "C:\\Users\\Morgan\\Source\\Repos\\PizzaMargarittaCourse\\Project P34.Domain\\Project P34.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Администратор\\Source\\Repos\\PizzaMargaritta\\Project P34.Domain\\Project P34.Domain.csproj",
+        "projectUniqueName": "C:\\Users\\Morgan\\Source\\Repos\\PizzaMargarittaCourse\\Project P34.Domain\\Project P34.Domain.csproj",
         "projectName": "Project P34.Domain",
-        "projectPath": "C:\\Users\\Администратор\\Source\\Repos\\PizzaMargaritta\\Project P34.Domain\\Project P34.Domain.csproj",
-        "packagesPath": "C:\\Users\\Администратор\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Администратор\\Source\\Repos\\PizzaMargaritta\\Project P34.Domain\\obj\\",
+        "projectPath": "C:\\Users\\Morgan\\Source\\Repos\\PizzaMargarittaCourse\\Project P34.Domain\\Project P34.Domain.csproj",
+        "packagesPath": "C:\\Users\\Morgan\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Morgan\\Source\\Repos\\PizzaMargarittaCourse\\Project P34.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+          "C:\\Microsoft\\Xamarin\\NuGet\\"
         ],
         "configFilePaths": [
-          "C:\\Users\\Администратор\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\Morgan\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"
@@ -107,8 +109,8 @@
         "frameworks": {
           "netcoreapp3.1": {
             "projectReferences": {
-              "C:\\Users\\Администратор\\Source\\Repos\\PizzaMargaritta\\Project P34.DataAccess\\Project P34.DataAccess.csproj": {
-                "projectPath": "C:\\Users\\Администратор\\Source\\Repos\\PizzaMargaritta\\Project P34.DataAccess\\Project P34.DataAccess.csproj"
+              "C:\\Users\\Morgan\\Source\\Repos\\PizzaMargarittaCourse\\Project P34.DataAccess\\Project P34.DataAccess.csproj": {
+                "projectPath": "C:\\Users\\Morgan\\Source\\Repos\\PizzaMargarittaCourse\\Project P34.DataAccess\\Project P34.DataAccess.csproj"
               }
             }
           }

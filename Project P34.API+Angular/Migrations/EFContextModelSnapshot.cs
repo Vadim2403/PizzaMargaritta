@@ -344,10 +344,8 @@ namespace Project_P34.API_Angular.Migrations
 
             modelBuilder.Entity("Project_P34.DataAccess.Entity.WhishlistPizzas", b =>
                 {
-                    b.Property<int>("ID")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int")
-                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+                    b.Property<string>("Id")
+                        .HasColumnType("nvarchar(450)");
 
                     b.Property<string>("Pizza_Id")
                         .IsRequired()
@@ -357,7 +355,7 @@ namespace Project_P34.API_Angular.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.HasKey("ID");
+                    b.HasKey("Id");
 
                     b.ToTable("tblWhislistPizzas");
                 });

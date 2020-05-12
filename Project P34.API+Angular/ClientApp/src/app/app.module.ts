@@ -62,7 +62,7 @@ const notifierOptions: NotifierOptions = {
       CreatorComponent,
       UserEditComponent,
       PizzaForAdminListComponent,
-      PizzaEditComponent
+      PizzaEditComponent,
    ],
    imports: [
       BrowserModule.withServerTransition({appId: 'ng-cli-universal'}),
@@ -72,7 +72,8 @@ const notifierOptions: NotifierOptions = {
       NotifierModule.withConfig(notifierOptions),
       BrowserAnimationsModule,
       NgxSpinnerModule,
-      DemoNgZorroAntdModule
+      DemoNgZorroAntdModule,
+
    ],
 
 

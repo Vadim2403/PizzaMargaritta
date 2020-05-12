@@ -9,12 +9,13 @@ namespace Project_P34.DataAccess.Entity
     [Table("tblWhislistPizzas")]
     public class WhishlistPizzas
     {
+ 
         [Key]
-        public int ID { get; set; }
+        public string Id { get; set; }
         [Required]
         public string Pizza_Id { get; set; }
         [Required]
         public string User_Id { get; set; }
-
+ 
     }
 }
