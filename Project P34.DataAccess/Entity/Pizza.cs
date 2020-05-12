@@ -23,6 +23,6 @@ namespace Project_P34.DataAccess.Entity
         [Required]
         public string Image { get; set; }
 
-        public virtual ICollection<Ingredient> Ingredients { get; set; }
+
     }
 }

@@ -8,7 +8,8 @@ import { templateJitUrl } from '@angular/compiler';
 import { ApiService } from 'src/app/core/api.service';
 import { temporaryAllocator } from '@angular/compiler/src/render3/view/util';
 import { notifierCustomConfigFactory } from 'angular-notifier';
-
+import { v4 as uuidv4 } from 'uuid';
+import { NzTreeHigherOrderServiceToken } from 'ng-zorro-antd';
 @Injectable({
   providedIn: 'root'
 })
@@ -24,7 +25,7 @@ constructor(private http: HttpClient, private apiSevice: ApiService) {}
     this.ingredientsToone = ingredients;
     var counter = this.custompizzas.length + 1;
     var temp:Pizza = new Pizza();
-     temp.id = "custom_"+counter;
+     temp.id = uuidv4();
      temp.name = "Your custom pizza #"+counter;
      var totalprice = 0;
      temp.description = "Pizza which was created by you \n Filling:\n";
@@ -36,11 +37,16 @@ constructor(private http: HttpClient, private apiSevice: ApiService) {}
      temp.image = "https://st3.depositphotos.com/5299014/13824/v/1600/depositphotos_138241406-stock-illustration-beautiful-pizza-painted-in-a.jpg";
     
      this.custompizzas.push(temp);
-     this.apiSevice.AddPizza(temp).subscribe(data=>{
+     this.apiSevice.AddPizzaCustoms(temp).subscribe(data => {
+      if(data.status === 200){
+        alert("Harasho")
+      }
+     }, error =>{console.log(error)})
+     this.apiSevice.AddPizzaToWhishList(temp.id,this.apiSevice.getCurrentUserId()).subscribe(data=>{
         if(data.status === 200){
-          
+          alert("Harasho2")
         }
-     }, error =>{console.log(error);});
+     }, error =>{console.log(error)});
      
   }
   SharePizzas(){

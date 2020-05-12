@@ -180,9 +180,6 @@ namespace Project_P34.API_Angular.Migrations
                     b.Property<string>("ID")
                         .HasColumnType("nvarchar(450)");
 
-                    b.Property<string>("CustomPizzaId")
-                        .HasColumnType("nvarchar(450)");
-
                     b.Property<string>("Image")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
@@ -191,17 +188,10 @@ namespace Project_P34.API_Angular.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("PizzaId")
-                        .HasColumnType("nvarchar(450)");
-
                     b.Property<decimal>("Price")
                         .HasColumnType("decimal(18,2)");
 
                     b.HasKey("ID");
-
-                    b.HasIndex("CustomPizzaId");
-
-                    b.HasIndex("PizzaId");
 
                     b.ToTable("tblIngredients");
                 });
@@ -409,17 +399,6 @@ namespace Project_P34.API_Angular.Migrations
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
-                });
-
-            modelBuilder.Entity("Project_P34.DataAccess.Entity.Ingredient", b =>
-                {
-                    b.HasOne("Project_P34.DataAccess.Entity.CustomPizza", null)
-                        .WithMany("Ingredients")
-                        .HasForeignKey("CustomPizzaId");
-
-                    b.HasOne("Project_P34.DataAccess.Entity.Pizza", null)
-                        .WithMany("Ingredients")
-                        .HasForeignKey("PizzaId");
                 });
 
             modelBuilder.Entity("Project_P34.DataAccess.Entity.UserMoreInfo", b =>

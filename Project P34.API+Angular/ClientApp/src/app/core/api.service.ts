@@ -10,6 +10,7 @@ import { PizzaCreate } from '../Models/pizza-create';
 import { Ingredient } from '../Models/ingredient.model';
 import { WhishListPizza } from '../Models/WhishListPizza.model';
 import { v4 as uuidv4 } from 'uuid';
+import { decode } from 'punycode';
 
 @Injectable({
   providedIn: 'root'
@@ -26,7 +27,16 @@ export class ApiService {
   SignIn(UserLoginDto: SignInModel) {
     return this.http.post<ApiResult>(this.baseUrl + '/login', UserLoginDto);
   }
-
+  getCurrentUserId(){
+    const token = localStorage.getItem('token');
+    if( token!==null ){
+      const jwtData = token.split('.')[1];
+      const decodedJwtJsonData = window.atob(jwtData);
+      const decodedJwtData = JSON.parse(decodedJwtJsonData);
+      return decodedJwtData.id;
+    }
+    return "error";
+  }
   GetPizzas() {
     return this.http.get<Pizza[]>('/api/pizzas');
   }
@@ -44,7 +54,10 @@ export class ApiService {
     newWhPizza.id = uuidv4();
     newWhPizza.pizza_id = pizza_id;
     newWhPizza.user_id = user_id;
-    return this.http.post<ApiResult>('/api/whishlist/AddToWhishList', newWhPizza);
+    return this.http.post<ApiResult>('/api/whishlist/addtoWhishList', newWhPizza);
+  }
+  AddPizzaCustoms(pizza:Pizza){
+    return this.http.post<ApiResult>('/api/custom/addtoCustoms', pizza);
   }
   GetIngrdients() {
     return this.http.get<Ingredient[]>('/api/ingredients');

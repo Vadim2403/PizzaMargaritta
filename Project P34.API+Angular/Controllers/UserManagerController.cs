@@ -1,15 +1,16 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using Microsoft.AspNetCore.Identity;
 using System.Security.Cryptography.X509Certificates;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Http;
-using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Project_IDA.DTO.Models.Result;
 using Project_P34.DataAccess;
 using Project_P34.DataAccess.Entity;
 using Project_P34.DTO.Models;
+using System.Security.Claims;
 
 namespace Project_P34.API_Angular.Controllers
 {
@@ -26,6 +27,13 @@ namespace Project_P34.API_Angular.Controllers
             _userManager = userManager;
         }
 
+        [HttpGet("getusersid")]
+        public string GetcurrId()
+        {
+            ClaimsPrincipal currentUser = this.User;
+            var currentUserID = currentUser.FindFirst(ClaimTypes.NameIdentifier).Value;
+            return currentUserID;
+        }
         [HttpGet]
         public IEnumerable<UserItemDTO> getUsers()
         
