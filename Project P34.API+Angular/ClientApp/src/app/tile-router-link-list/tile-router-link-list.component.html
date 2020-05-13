@@ -1,6 +1,6 @@
 <div class="container">
-  <div class="row">
-    <app-tile-router-link-item *ngFor="let item of list" [model]="item"></app-tile-router-link-item>
+  <div nz-row>
+    <app-tile-router-link-item *ngFor="let item of list" [model]="item" nz-col nzSpan="6" style="margin-left: 5px;margin-right: 5px;"></app-tile-router-link-item>
   </div>
 
 </div>

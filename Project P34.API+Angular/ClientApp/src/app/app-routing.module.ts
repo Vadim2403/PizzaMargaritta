@@ -21,6 +21,8 @@ import { UserEditComponent } from './Areas/admin-area/Components/user-manager/Us
 import { PizzaEditComponent } from './Pizza/pizza-edit/pizza-edit.component';
 import { PizzaForAdminListComponent } from './Pizza/pizza-for-admin-list/pizza-for-admin-list.component';
 import { PizzaCreateComponent } from './Pizza/pizza-create/pizza-create.component';
+import { MainPageComponent } from './Areas/admin-area/MainPage/main-page/main-page.component';
+import { PizzaManagerRouterComponent } from './Areas/admin-area/Components/pizza-manager/pizza-manager-router/pizza-manager-router.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent, pathMatch: 'full'},
@@ -35,9 +37,10 @@ const routes: Routes = [
     component: AdminAreaComponent,
     canActivate: [AdminGuard],
     children: [
-      { path: '', component: DashboardComponent, pathMatch: 'full' },
+      { path: '', component: MainPageComponent, pathMatch: 'full' },
       { path: 'user-manager', component: UserManagerComponent, pathMatch: 'full' },
       { path: 'pizza-manager', component: PizzaManagerComponent, children: [
+        { path: '', component: PizzaManagerRouterComponent, pathMatch: 'full'},
         {path: 'pizza-edit/:id', component: PizzaEditComponent, pathMatch: 'full'},
         {path: 'pizza-table', component: PizzaForAdminListComponent, pathMatch: 'full'},
         {path: 'create-pizza', component: PizzaCreateComponent, pathMatch: 'full'}
