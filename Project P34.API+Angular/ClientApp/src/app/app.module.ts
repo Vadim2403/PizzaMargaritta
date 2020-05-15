@@ -39,6 +39,7 @@ import { TileRouterLinkListComponent } from './tile-router-link-list/tile-router
 import { TileRouterLinkItemComponent } from './tile-router-link-list/tile-router-link-item/tile-router-link-item.component';
 import { MainPageComponent } from './Areas/admin-area/MainPage/main-page/main-page.component';
 import { PizzaManagerRouterComponent } from './Areas/admin-area/Components/pizza-manager/pizza-manager-router/pizza-manager-router.component';
+import { WhishListitemComponent } from './WhislistComponent/WhishListitem/WhishListitem.component';
 
 const notifierOptions: NotifierOptions = {
   position: {horizontal: { position: 'right' }, vertical: { position: 'top' }}
@@ -72,6 +73,7 @@ const notifierOptions: NotifierOptions = {
       TileRouterLinkItemComponent,
       MainPageComponent,
       PizzaManagerRouterComponent,
+      WhishListitemComponent
    ],
    imports: [
       BrowserModule.withServerTransition({appId: 'ng-cli-universal'}),

@@ -11,6 +11,7 @@ import { Ingredient } from '../Models/ingredient.model';
 import { WhishListPizza } from '../Models/WhishListPizza.model';
 import { v4 as uuidv4 } from 'uuid';
 import { decode } from 'punycode';
+import { CustomPizza } from '../Models/CustomPizza.model';
 
 @Injectable({
   providedIn: 'root'
@@ -37,6 +38,9 @@ export class ApiService {
     }
     return "error";
   }
+  getWishList(){
+    return this.http.get<Pizza[]>('/api/whishlist/' + this.getCurrentUserId());
+  }
   GetPizzas() {
     return this.http.get<Pizza[]>('/api/pizzas');
   }
@@ -49,7 +53,7 @@ export class ApiService {
   GetPizza(id: string): Observable<Pizza> {
     return this.http.get<Pizza>('/api/pizzas/' + id);
   }
-  AddPizzaToWhishList(pizza_id: string, user_id:string){
+  AddPizzaToWhishList(pizza_id:string, user_id:string){
     var newWhPizza = new WhishListPizza();
     newWhPizza.id = uuidv4();
     newWhPizza.pizza_id = pizza_id;

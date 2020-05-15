@@ -67,3 +67,15 @@ C:\Users\Morgan\Source\Repos\PizzaMargarittaCourse\Project P34.Domain\obj\Debug\
 C:\Users\Morgan\Source\Repos\PizzaMargarittaCourse\Project P34.Domain\obj\Debug\netcoreapp3.1\Project P34.Domain.csproj.CopyComplete
 C:\Users\Morgan\Source\Repos\PizzaMargarittaCourse\Project P34.Domain\obj\Debug\netcoreapp3.1\Project P34.Domain.dll
 C:\Users\Morgan\Source\Repos\PizzaMargarittaCourse\Project P34.Domain\obj\Debug\netcoreapp3.1\Project P34.Domain.pdb
+D:\ШАГ\курсова\Project P34.Domain\bin\Debug\netcoreapp3.1\Project P34.Domain.deps.json
+D:\ШАГ\курсова\Project P34.Domain\bin\Debug\netcoreapp3.1\Project P34.Domain.dll
+D:\ШАГ\курсова\Project P34.Domain\bin\Debug\netcoreapp3.1\Project P34.Domain.pdb
+D:\ШАГ\курсова\Project P34.Domain\bin\Debug\netcoreapp3.1\Project P34.DataAccess.dll
+D:\ШАГ\курсова\Project P34.Domain\bin\Debug\netcoreapp3.1\Project P34.DataAccess.pdb
+D:\ШАГ\курсова\Project P34.Domain\obj\Debug\netcoreapp3.1\Project P34.Domain.csprojAssemblyReference.cache
+D:\ШАГ\курсова\Project P34.Domain\obj\Debug\netcoreapp3.1\Project P34.Domain.csproj.CoreCompileInputs.cache
+D:\ШАГ\курсова\Project P34.Domain\obj\Debug\netcoreapp3.1\Project P34.Domain.AssemblyInfoInputs.cache
+D:\ШАГ\курсова\Project P34.Domain\obj\Debug\netcoreapp3.1\Project P34.Domain.AssemblyInfo.cs
+D:\ШАГ\курсова\Project P34.Domain\obj\Debug\netcoreapp3.1\Project P34.Domain.csproj.CopyComplete
+D:\ШАГ\курсова\Project P34.Domain\obj\Debug\netcoreapp3.1\Project P34.Domain.dll
+D:\ШАГ\курсова\Project P34.Domain\obj\Debug\netcoreapp3.1\Project P34.Domain.pdb

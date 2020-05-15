@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "XyBqK0EHswGnvPW6ZM9qGDGSSjEzTMehPW9SEYE6gW5gl/OAmp7K9xOGtrVgwFEVOJXmIS4UT2Da+pclWoRB4Q==",
+  "dgSpecHash": "I5Lyv4zOMo76YvcqN/yBmeM7O4t/detWQlLWjCZ4yWy0X3mU6wGbc3Mkqy3NLjSn6bd0aPZAVwWTg1tL3pPGVg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Morgan\\Source\\Repos\\PizzaMargarittaCourse\\Project P34.DTO\\Project P34.DTO.csproj",
+  "projectFilePath": "D:\\ШАГ\\курсова\\Project P34.DTO\\Project P34.DTO.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Morgan\\.nuget\\packages\\microsoft.aspnetcore.cryptography.internal\\3.1.1\\microsoft.aspnetcore.cryptography.internal.3.1.1.nupkg.sha512",
     "C:\\Users\\Morgan\\.nuget\\packages\\microsoft.aspnetcore.cryptography.keyderivation\\3.1.1\\microsoft.aspnetcore.cryptography.keyderivation.3.1.1.nupkg.sha512",

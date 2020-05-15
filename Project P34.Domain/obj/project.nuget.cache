@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Yh6+GLsfg4qpPcl3qdSJrP4gOGf0t4f8pJ8e/G1rRgZo5VGx3HD9U1h4gyDj1pdmSgE396W6wC15/qDxcRoZQA==",
+  "dgSpecHash": "8n/wwv/XrUjH7TlqHWOHnnWYQDgnY+iUSH55aYF12oVHEL2bkBa9w861VKIGtw5/G9GjLMawtOOHGweUEQ2a4Q==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Morgan\\Source\\Repos\\PizzaMargarittaCourse\\Project P34.Domain\\Project P34.Domain.csproj",
+  "projectFilePath": "D:\\ШАГ\\курсова\\Project P34.Domain\\Project P34.Domain.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Morgan\\.nuget\\packages\\microsoft.aspnetcore.authentication.jwtbearer\\3.1.1\\microsoft.aspnetcore.authentication.jwtbearer.3.1.1.nupkg.sha512",
     "C:\\Users\\Morgan\\.nuget\\packages\\microsoft.aspnetcore.cryptography.internal\\3.1.1\\microsoft.aspnetcore.cryptography.internal.3.1.1.nupkg.sha512",

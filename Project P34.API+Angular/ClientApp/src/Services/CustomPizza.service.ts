@@ -21,7 +21,6 @@ constructor(private http: HttpClient, private apiSevice: ApiService) {}
   
 
   CreatePizza(ingredients: Ingredient[]){
-    alert("in create pizza");
     this.ingredientsToone = ingredients;
     var counter = this.custompizzas.length + 1;
     var temp:Pizza = new Pizza();
@@ -37,16 +36,17 @@ constructor(private http: HttpClient, private apiSevice: ApiService) {}
      temp.image = "https://st3.depositphotos.com/5299014/13824/v/1600/depositphotos_138241406-stock-illustration-beautiful-pizza-painted-in-a.jpg";
     
      this.custompizzas.push(temp);
-     this.apiSevice.AddPizzaCustoms(temp).subscribe(data => {
+     this.apiSevice.AddPizzaToWhishList(temp.id,this.apiSevice.getCurrentUserId()).subscribe(data=>{
       if(data.status === 200){
         alert("Harasho")
       }
+   }, error =>{console.log(error)});
+     this.apiSevice.AddPizzaCustoms(temp).subscribe(data => {
+      if(data.status === 200){
+        alert("Harasho2")
+      }
      }, error =>{console.log(error)})
-     this.apiSevice.AddPizzaToWhishList(temp.id,this.apiSevice.getCurrentUserId()).subscribe(data=>{
-        if(data.status === 200){
-          alert("Harasho2")
-        }
-     }, error =>{console.log(error)});
+    
      
   }
   SharePizzas(){
