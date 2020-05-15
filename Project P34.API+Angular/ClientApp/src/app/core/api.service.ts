@@ -66,6 +66,9 @@ export class ApiService {
   GetIngrdients() {
     return this.http.get<Ingredient[]>('/api/ingredients');
   }
+  CreateIngredient(ingredient: Ingredient){
+    return this.http.post<ApiResult>('/api/ingredients/create', ingredient);
+  }
   AddPizza(PizzaModel: PizzaCreate){
     return this.http.post<ApiResult>('/api/pizzas/addpizza', PizzaModel);
   }

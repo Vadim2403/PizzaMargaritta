@@ -9,7 +9,8 @@ import { TileRouterLink } from 'src/app/Models/tile-router-link';
 export class PizzaManagerRouterComponent implements OnInit {
 
   list: TileRouterLink[] = [new TileRouterLink('🍕PizzaTable🍕', 'Piasasdsad', 'admin-panel/pizza-manager/pizza-table'),
-   new TileRouterLink('🍕Create new pizza🍕', 'laps', 'admin-panel/pizza-manager/create-pizza')];
+   new TileRouterLink('🍕Create new pizza🍕', 'laps', 'admin-panel/pizza-manager/create-pizza'),
+   new TileRouterLink('🍗Create new ingredient🍗', 'laps', 'admin-panel/pizza-manager/create-ingredient')];
 
   constructor() { }
 

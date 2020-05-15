@@ -1,0 +1,15 @@
+<div class="container">
+  <div nz-row>
+    <div nz-col nzSpan="6" style="margin-right: 90px;">
+      <input [(ngModel)]="ingredientModel.name" type="text" nz-input  placeholder="Enter Name">
+
+      <!-- <input   type="text"  nz-input   multiple placeholder=""> -->
+      <input [(ngModel)]="ingredientModel.price"  type="number" nz-input  placeholder="Enter price">
+      <input [(ngModel)]="ingredientModel.image"  type="text" nz-input  placeholder="Enter image">
+
+      <button (click)="createIngredient()" nz-button nzType="primary">Create</button>
+
+    </div>
+
+  </div>
+</div>

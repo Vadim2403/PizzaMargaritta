@@ -1,5 +1,4 @@
-
-
+<div class="container">
 <input class="input-user-search" type="text" name="search" [(ngModel)]="searchText" (ngModelChange)="Search()" nz-input placeholder="search..."/>
 <div style="background-color: white;">
 <nz-table #rowSelectionTable nzShowSizeChanger [nzData]="searchResult">
@@ -29,4 +28,5 @@
     </tr>
   </tbody>
 </nz-table>
+</div>
 </div>
