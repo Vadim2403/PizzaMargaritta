@@ -1,3 +1,8 @@
-<p>
-  
-</p>
+
+
+<div class="container">
+    <div nz-row>
+          <app-WhishListitem *ngFor="let item of WhislistPizzas;let i = index" [whishlistPizza] = "item"  nz-col nzSpan="6" style="margin-right: 5px; margin-left: 5px;"></app-WhishListitem>
+    </div>
+    </div>
+    

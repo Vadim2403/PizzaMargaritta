@@ -24,5 +24,6 @@ namespace Project_P34.DataAccess.Entity
         public string Image { get; set; }
 
 
+
     }
 }

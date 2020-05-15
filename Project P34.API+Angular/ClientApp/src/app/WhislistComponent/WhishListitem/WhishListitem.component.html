@@ -1,21 +1,21 @@
 <div>
 <div class="pizzaItem">
 
-    <img [src]="pizza.image" alt="">
+    <img [src]="whishlistPizza.image" alt="">
   <div class="pizzaItem-content">
     <h3>
-      {{pizza.name}}
+      {{whishlistPizza.name}}
     </h3>
     <p class="pizzaItem-description">
-      {{pizza.description}}
+      {{whishlistPizza.description}}
     </p>
     <div>
     <div class="pizzaItem-price">
-      Price: {{pizza.price}}$
+      Price: {{whishlistPizza.price}}$
     </div>
 
-    <button (click)="addTowhishlist()">
-      Buy
+    <button>
+      Remove
     </button>
     </div>
   </div>

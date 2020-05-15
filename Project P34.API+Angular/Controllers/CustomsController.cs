@@ -31,12 +31,30 @@ namespace Project_P34.API_Angular.Controllers
             _jwtTokenService = jWtTokenService;
 
         }
+        [HttpGet]
+        public IEnumerable<Pizza> getCstoms()
+        {
+            List<CustomPizza> result = _context.customPizzas.ToList();
+            var result2 = new List<Pizza>();
+            for(int i = 0; i < result.Count; i++)
+            {
+                result2.Add(new Pizza
+                {
+                    Id = (result[i] as CustomPizza).Id,
+                    Description = (result[i] as CustomPizza).Description,
+                    Image = (result[i] as CustomPizza).Image,
+                    Name = (result[i] as CustomPizza).Name,
+                    Price = (result[i] as CustomPizza).Price,
+                });
+            }
+            return result2;
+        }
         [HttpPost("addtoCustoms")]
         public ResultDto AddToCustoms([FromBody]CustomPizza model)
         {
             _context.customPizzas.Add(new CustomPizza()
             {
-                Id = Guid.NewGuid().ToString(),
+                Id = model.Id,
                 Description = model.Description,
                 Image = model.Image,
                 Name = model.Name,
