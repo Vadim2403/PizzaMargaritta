@@ -62,7 +62,7 @@ pipeline  {
            steps {
                echo " ============== starting chatterbox =================="
                sh '''
-              docker run -d --name course -p 100:80 vadim2403/course
+              docker run --name course -p 100:80 vadim2403/course
                '''
            }
       }
