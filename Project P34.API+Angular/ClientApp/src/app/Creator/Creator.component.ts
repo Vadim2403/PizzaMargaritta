@@ -45,7 +45,7 @@ export class CreatorComponent implements OnInit {
       var idshka = this.choosed.indexOf(this.toBascket);
       this.choosed.splice(idshka,1);
     }
-    // alert("If ти see це message це means що this частина of code не work");
+
     }
     Send(){
       this.resender.CreatePizza(this.choosed);
