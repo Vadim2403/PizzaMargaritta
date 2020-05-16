@@ -42,27 +42,27 @@ pipeline  {
 //                '''
 //            }
 //        }
-       stage("docker stop") {
-          steps {
-               echo " ============== stoping all images =================="
-               sh '''
-               docker stop course
-               '''
-           }
-      } 
-       stage("docker remove") {
-          steps {
-               echo " ============== removing all docker containers =================="
-               sh '''
-               docker rm course
-               '''
-           }
-       }
+    //    stage("docker stop") {
+    //       steps {
+    //            echo " ============== stoping all images =================="
+    //            sh '''
+    //            docker stop course
+    //            '''
+    //        }
+    //   } 
+    //    stage("docker remove") {
+    //       steps {
+    //            echo " ============== removing all docker containers =================="
+    //            sh '''
+    //            docker rm course
+    //            '''
+    //        }
+    //    }
        stage("docker run") {
            steps {
                echo " ============== starting chatterbox =================="
                sh '''
-              docker run -d --restart=always --name course -p 100:80 vadim2403/course
+              docker run -d --name course -p 100:80 vadim2403/course
                '''
            }
       }
