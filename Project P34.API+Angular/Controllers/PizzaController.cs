@@ -46,6 +46,17 @@ namespace Project_P34.API_Angular.Controllers
             });
             return result;
         }
+        [HttpGet("{id}")]
+        public PizzaViewModel GetPizza([FromRoute] string id)
+        {
+            var _pizza = _context.pizzas.FirstOrDefault(x => x.Id == id);
+            PizzaViewModel model = new PizzaViewModel() { Id = _pizza.Id,
+                Description = _pizza.Description,
+                Image = _pizza.Image,
+                Name = _pizza.Name,
+                Price = _pizza.Price };
+            return model;
+        }
 
         [HttpPost("addpizza")]
         public ResultDto AddPizza([FromBody]PizzaCreateViewModel model)

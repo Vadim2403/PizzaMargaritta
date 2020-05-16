@@ -26,8 +26,11 @@
 }
 
 .tileRouterLink .description{
+  height: 150px;
+  margin-top: 10px;
   text-overflow: ellipsis;
   overflow: hidden;
+  word-wrap: break-word;
   white-space: nowrap;
   padding: 5px;
   max-height: 150px;

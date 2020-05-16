@@ -19,7 +19,7 @@
       <td>
 
         <a nz-button nzType="primary" nz-popconfirm nzPopconfirmTitle="Are you sure?" (nzOnConfirm)="deletePizza(data.id)">Delete</a>
-        <a nz-button nzType="primary"  [routerLink]="['pizza-edit/', data.id]" routerLinkActive="router-link-active"  >Edit</a>
+        <a nz-button nzType="primary"  [routerLink]="['/admin-panel/pizza-manager/pizza-edit/', data.id]" routerLinkActive="router-link-active"  >Edit</a>
       </td>
     </tr>
   </tbody>

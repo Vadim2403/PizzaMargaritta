@@ -1,12 +1,43 @@
 <div class="container">
-  <form nz-form>
-    <input nz-input placeholder="Name" [(ngModel)]="pizza.name"/>
-    <nz-input-number [(ngModel)]="pizza.price" [nzMin]="1" [nzMax]="999" [nzStep]="1" placeholder="Price"></nz-input-number>
 
+<div class="container">
+  <div nz-row>
+    <div nz-col nzSpan="6" style="margin-right: 90px;">
+      <nz-form-item>
+        <nz-form-control>
+          <nz-input-group>
+    <input nz-input placeholder="Name" [(ngModel)]="pizza.name"   />
+    </nz-input-group>
+    </nz-form-control>
+    </nz-form-item>
+
+    <nz-form-item>
+      <nz-form-control>
+        <nz-input-group>
+    <nz-input-number [(ngModel)]="pizza.price" [nzMin]="1" [nzMax]="999" [nzStep]="1" placeholder="Price"></nz-input-number>
+          </nz-input-group>
+      </nz-form-control>
+    </nz-form-item>
+
+    <nz-form-item>
+      <nz-form-control>
+        <nz-input-group>
     <input nz-input placeholder="ImageURL" [(ngModel)]="pizza.image"/>
+          </nz-input-group>
+        </nz-form-control>
+        </nz-form-item>
+        <nz-form-item>
+          <nz-form-control>
+            <nz-input-group>
     <textarea rows="4" nz-input placeholder="Description" [(ngModel)]="pizza.description"></textarea>
-    <button nz-button [nzSize]="'large'" nzType="primary">Submit</button>
-  </form>
+    </nz-input-group>
+    </nz-form-control>
+    </nz-form-item>
+    <button nz-button [nzSize]="'large'" nzType="primary" (click) = "editPizza()">Submit</button>
+
+  </div>
+  <app-pizza-item [pizza] = "pizza" nz-col nzSpan="6"></app-pizza-item>
+  </div>
 
 
 </div>

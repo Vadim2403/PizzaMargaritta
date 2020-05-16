@@ -13,7 +13,7 @@ import { Pizza } from 'src/app/Models/pizza.model';
 export class PizzaEditComponent implements OnInit {
 
   public id: string;
-  public pizza: Pizza;
+  public pizza: Pizza = new Pizza();
 
 
 
@@ -24,6 +24,11 @@ export class PizzaEditComponent implements OnInit {
     private route: ActivatedRoute) { }
 
   ngOnInit() {
+    this.pizza.image = '';
+    this.pizza.description = '';
+    this.pizza.name = '';
+    this.pizza.price = 0;
+    this.pizza.id = '';
     this.route.params.subscribe((params: Params) => {
       this.id = params['id'];
 
@@ -31,6 +36,16 @@ export class PizzaEditComponent implements OnInit {
 
     this.apiService.GetPizza(this.id).subscribe( (data: Pizza) => {
       this.pizza = data;
+    } );
+  }
+  editPizza(){
+    this.apiService.EditPizza(this.pizza).subscribe( data =>{
+      if( data.status === 200){
+        this.notifier.notify('success', 'Edited successfully');
+      } else{
+        this.notifier.notify('error', 'Error');
+      }
+
     } );
   }
 
