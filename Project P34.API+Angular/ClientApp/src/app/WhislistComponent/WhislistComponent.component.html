@@ -1,8 +1,38 @@
 
 
-<div class="container">
+<!-- <div class="container">
     <div nz-row>
           <app-WhishListitem *ngFor="let item of WhislistPizzas;let i = index" [whishlistPizza] = "item"  nz-col nzSpan="6" style="margin-right: 5px; margin-left: 5px;"></app-WhishListitem>
     </div>
-    </div>
+
+    </div> -->
+    <div class="container">
+
+      <div style="background-color: white;">
+      <input class="input-user-search" type="text" name="search" [(ngModel)]="searchText" (ngModelChange)="Search()" nz-input placeholder="search..."/>
+      <nz-table #rowSelectionTable nzShowSizeChanger [nzData]="searchResult">
+        <thead>
+          <tr>
+            <th>   </th>
+            <th nzWidth="30%">Name</th>
+            <th>Description</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let data of rowSelectionTable.data">
+            <td> <img id="smallEx" [src]="data.image" alt=""></td>
+            <td>{{ data.name }}</td>
+            <td>{{ data.description }}</td>
+            <td>
+              <a nz-button nzType="primary" style="color:white" nz-popconfirm nzPopconfirmTitle="Are you sure?" (nzOnConfirm)="removeFromWhishList(data.id)">Delete</a>
+            </td>
+          </tr>
+        </tbody>
+      </nz-table>
+      <label *ngIf="size >= 1">Total price: {{totalPrice}} $</label>
+      </div>
+      <button *ngIf="size >= 1" (click)="order()">Order</button>
+      </div>
+      
     

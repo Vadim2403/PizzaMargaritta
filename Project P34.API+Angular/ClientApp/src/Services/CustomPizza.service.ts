@@ -25,7 +25,7 @@ constructor(private http: HttpClient, private apiSevice: ApiService) {}
     var counter = this.custompizzas.length + 1;
     var temp:Pizza = new Pizza();
      temp.id = uuidv4();
-     temp.name = "Your custom pizza #"+counter;
+     temp.name = "Your custom pizza";
      var totalprice = 0;
      temp.description = "Pizza which was created by you \n Filling:\n";
      for(var i = 0; i < this.ingredientsToone.length; i++){

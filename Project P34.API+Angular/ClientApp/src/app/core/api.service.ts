@@ -18,6 +18,7 @@ import { CustomPizza } from '../Models/CustomPizza.model';
 })
 export class ApiService {
 
+  public poza: WhishListPizza; 
   constructor(private http: HttpClient) { }
   baseUrl = '/api/Account';
   loginStatus = new EventEmitter<boolean>();
@@ -40,6 +41,12 @@ export class ApiService {
   }
   getWishList(){
     return this.http.get<Pizza[]>('/api/whishlist/' + this.getCurrentUserId());
+  }
+  clearWishList(){
+    return this.http.get<ApiResult>('/api/whishlist/clear/' + this.getCurrentUserId());
+  }
+  removeFromWishList(id: string){
+    return this.http.get<ApiResult>('/api/whishlist/delete/' + this.getCurrentUserId() + '/' + id);
   }
   GetPizzas() {
     return this.http.get<Pizza[]>('/api/pizzas');
