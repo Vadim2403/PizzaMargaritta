@@ -76,3 +76,4 @@ D:\ШАГ\курсова\Project P34.DataAccess\obj\Debug\netcoreapp3.1\Project 
 D:\ШАГ\курсова\Project P34.DataAccess\obj\Debug\netcoreapp3.1\Project P34.DataAccess.dll
 D:\ШАГ\курсова\Project P34.DataAccess\obj\Debug\netcoreapp3.1\Project P34.DataAccess.pdb
 D:\ШАГ\курсова\Project P34.DataAccess\obj\Debug\netcoreapp3.1\Project P34.DataAccess.genruntimeconfig.cache
+D:\ШАГ\курсова\Project P34.DataAccess\obj\Debug\netcoreapp3.1\Project P34.DataAccess.csprojAssemblyReference.cache
