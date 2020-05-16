@@ -18,6 +18,7 @@ export class CreatorComponent implements OnInit {
   public choosed: Ingredient[] = [];
   public idOFclicked: string;
   public toBascket : Ingredient;
+  public size: number = 0;
   constructor(private apiService: ApiService,
     private spinner: NgxSpinnerService,
     private notifier: NotifierService,
@@ -28,6 +29,7 @@ export class CreatorComponent implements OnInit {
     this.spinner.show();
     this.apiService.GetIngrdients().subscribe((data: Ingredient[]) => {
       this.ingredients = data;
+     
       this.spinner.hide();
     });
   }
@@ -38,12 +40,14 @@ export class CreatorComponent implements OnInit {
     this.choosed.push(this.toBascket);
     var idshka = this.ingredients.indexOf(this.toBascket);
     this.ingredients.splice(idshka,1);
+    this.size = this.choosed.length;
     }
     else{
       this.toBascket = this.choosed.find(x => x.id == this.idOFclicked);
       this.ingredients.push(this.toBascket);
       var idshka = this.choosed.indexOf(this.toBascket);
       this.choosed.splice(idshka,1);
+      this.size = this.choosed.length;
     }
 
     }

@@ -8,7 +8,7 @@
   </div>
   <div>
   <h3>Your pizza</h3>
-  <a (click)="Send()">Add to Wishlist</a>
+  <a *ngIf="size >= 1" style="background-color: white;" (click)="Send()">Add to Wishlist</a>
   <div class="row" style="width: 50%; height: 1200px;">
       <app-ingredient-item   *ngFor="let item1 of choosed;let i = index"  [ingredient] = "item1" [btnText] = "'Remove'" (outToParent)="receiveFromChild($event)" class="col-lg-3 col-md-4"></app-ingredient-item>
   </div>

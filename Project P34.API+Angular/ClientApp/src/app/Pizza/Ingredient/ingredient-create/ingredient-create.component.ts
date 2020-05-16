@@ -12,7 +12,7 @@ import { Ingredient } from 'src/app/Models/ingredient.model';
 })
 export class IngredientCreateComponent implements OnInit {
 
-  public ingredientModel: Ingredient;
+  public ingredientModel: Ingredient = new Ingredient();
   constructor(private apiService: ApiService,
     private spinner: NgxSpinnerService,
     private notifier: NotifierService,
