@@ -43,7 +43,7 @@ namespace Project_P34.API_Angular.Controllers
             return result;
         }
 
-        [HttpPost("/create")]
+        [HttpPost("create")]
         public ResultDto CreateIngredient([FromBody] IngredientViewModel model)
         {
             _context.Ingredients.Add(new Ingredient()

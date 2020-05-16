@@ -27,10 +27,10 @@ constructor(private http: HttpClient, private apiSevice: ApiService,private noti
      temp.id = uuidv4();
      temp.name = "Your custom pizza";
      var totalprice = 1;
-     temp.description = "Pizza which was created by you \n Filling:\nBasis dought - 1$, ";
+     temp.description = "Pizza which was created by you \n Filling:\nBasis dought, ";
      for(var i = 0; i < this.ingredientsToone.length; i++){
          totalprice = totalprice + this.ingredientsToone[i].price;
-         temp.description += (this.ingredientsToone[i].name + " - " + this.ingredientsToone[i].price + ", ");
+         temp.description += (this.ingredientsToone[i].name + ", ");
      }
      temp.price = totalprice;
      temp.image = "https://st3.depositphotos.com/5299014/13824/v/1600/depositphotos_138241406-stock-illustration-beautiful-pizza-painted-in-a.jpg";
